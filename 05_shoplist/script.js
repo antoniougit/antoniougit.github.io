@@ -3,7 +3,7 @@ var input = document.getElementById("input");
 var list = document.getElementById("list");
 var delButtons = document.getElementsByClassName("delete");
 
-// To delete list item
+// Function to delete list item
 var removeListItem = function(e) {
 	e.target.parentNode.remove();
 }
