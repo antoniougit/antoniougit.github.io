@@ -4,7 +4,7 @@ var list = document.getElementById("list");
 var delButtons = document.getElementsByClassName("delete");
 
 // Function to create delete button
-function createDelButton() {
+var createDelButton = function() {
 	var delButton = document.createElement("button");
 	delButton.innerHTML = "Delete";
 	delButton.setAttribute("class", "delete");
@@ -12,18 +12,18 @@ function createDelButton() {
 	return delButton;
 }
 
-// Adding an event listener to each pre-existing list item
+// Add event listener to each pre-existing list item
 for (var i = 0; i < list.children.length; i++) {
 	delButtons[i].addEventListener("click", removeListItem);
 }
 
 // Function to check length of input
-function checkLength() {
+var checkLength = function() {
 	return input.value.length;
 }
 
 // Function to add input to list
-function createListElement() {
+var createListElement = function() {
 	var li = document.createElement("li");
 	li.appendChild(document.createTextNode(input.value));
 	li.appendChild(createDelButton());
@@ -32,28 +32,36 @@ function createListElement() {
 }
 
 // Run on button Click
-function addListAfterClick() {
+var addListAfterClick = function() {
 	if (checkLength() > 0) {
 		createListElement();
 	} 
 }
 // Run on Enter keypress
-function addListAfterKeypress(event) {
-	if (checkLength() > 0 && event.which === 13) {
+var addListAfterKeypress = function(e) {
+	if (checkLength() > 0 && e.which === 13) {
 		createListElement();
 	} 
 }
 
-// To line-through list item
-function toggleListElement(e) {
+// Function to line-through list item
+var toggleListElement = function(e) {
 		e.target.classList.toggle("done");
 }
 
 // To delete list item
-function removeListItem(e) {
+var removeListItem = function(e) {
 	e.target.parentNode.remove();
+}
+
+// To clear all list items
+var clearAll = function() {
+	while (list.firstChild) {
+		list.removeChild(list.firstChild);
+	}
 }
 
 enter.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
 list.addEventListener("click", toggleListElement);
+clear.addEventListener("click", clearAll);
