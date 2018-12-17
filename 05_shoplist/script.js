@@ -13,18 +13,18 @@ var toggleListElement = function(e) {
 	e.target.classList.toggle("done");
 }
 
-// Function to create delete button
+// Add event listener to each pre-existing list item
+for (var i = 0; i < list.children.length; i++) {
+	delButtons[i].addEventListener("click", removeListItem);
+}
+
+// Function to create delete button and add event listener
 var createDelButton = function() {
 	var delButton = document.createElement("button");
 	delButton.innerHTML = "Delete";
 	delButton.setAttribute("class", "delete");
 	delButton.addEventListener("click", removeListItem);
 	return delButton;
-}
-
-// Add event listener to each pre-existing list item
-for (var i = 0; i < list.children.length; i++) {
-	delButtons[i].addEventListener("click", removeListItem);
 }
 
 // Function to check length of input
