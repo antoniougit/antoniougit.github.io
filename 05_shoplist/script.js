@@ -3,6 +3,16 @@ var input = document.getElementById("input");
 var list = document.getElementById("list");
 var delButtons = document.getElementsByClassName("delete");
 
+// To delete list item
+var removeListItem = function(e) {
+	e.target.parentNode.remove();
+}
+
+// Function to line-through list item
+var toggleListElement = function(e) {
+	e.target.classList.toggle("done");
+}
+
 // Function to create delete button
 var createDelButton = function() {
 	var delButton = document.createElement("button");
@@ -42,16 +52,6 @@ var addListAfterKeypress = function(e) {
 	if (checkLength() > 0 && e.which === 13) {
 		createListElement();
 	} 
-}
-
-// Function to line-through list item
-var toggleListElement = function(e) {
-		e.target.classList.toggle("done");
-}
-
-// To delete list item
-var removeListItem = function(e) {
-	e.target.parentNode.remove();
 }
 
 // To clear all list items
