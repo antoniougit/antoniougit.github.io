@@ -1,13 +1,21 @@
+#container {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+}
+
 .done {
   text-decoration: line-through;
 }
 
 .delete {
   color: red;
-  position: absolute;
-  left: 180px;
   background-color: white;
   border: none;
+  margin-left: 20px;
 }
 
 .delete:hover {
@@ -20,3 +28,17 @@
   cursor: pointer;
 }
 
+#clear {
+  margin: 0 auto;
+  display: block;
+  border: 2px solid red;
+  padding: 10px 5px;
+  background-color: white;
+  color: red;
+  font-weight: bold;
+}
+
+#clear:hover {
+  background-color: red;
+  color: white;
+}
