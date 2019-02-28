@@ -22,7 +22,7 @@
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
-  <link href="css/freelancer.min.css" rel="stylesheet">
+  <link href="css/freelancer.css" rel="stylesheet">
 
 </head>
 
@@ -59,7 +59,7 @@
     <div class="container">
       <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
       <h1 class="text-uppercase mb-0">Website Under Construction</h1> <!-- Full name goes here -->
-      <hr class="star-light">
+      <hr class="circle-light">
       <h2 class="font-weight-light mb-0">Web Developer - IT Specialist</h2>
     </div>
   </header>
@@ -68,7 +68,7 @@
   <section class="portfolio" id="portfolio">
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-      <hr class="star-dark mb-5">
+      <hr class="circle-dark mb-5">
       <div class="row">
         <div class="col-md-6 col-lg-4">
           <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
@@ -138,7 +138,7 @@
   <section class="bg-primary text-white mb-0" id="about">
     <div class="container">
       <h2 class="text-center text-uppercase text-white">About</h2>
-      <hr class="star-light mb-5">
+      <hr class="circle-light mb-5">
       <div class="row">
         <div class="col-lg-4 ml-auto">
           <p class="lead">Computer enthusiast with over 10 years of professional experience in a wide range of technology-related fields. Relationship with IT started at a very young age, continued with Engineering studies and first jobs, focused mainly on hardware, and finally evolved into more software-oriented projects and a newfound passion for developing and managing web content.</p>
@@ -160,7 +160,7 @@
   <section id="contact">
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-      <hr class="star-dark mb-5">
+      <hr class="circle-dark mb-5">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
@@ -265,12 +265,18 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-secondary text-uppercase mb-0">Gradient Background Generator</h2>
-            <hr class="star-dark mb-5">
-            <a href="https://blitz3r.github.io/background-generator/" target="_blank"><img class="img-fluid mb-5" src="img/portfolio/background-generator.jpg" alt=""></a>
+            <hr class="circle-dark mb-5">
+            <a class="portfolio-item d-block mx-auto" href="https://blitz3r.github.io/background-generator/" target="_blank">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div class=" my-auto w-100 text-center text-white">
+                    <i class="fas fa-link fa-3x"></i>
+                  </div>
+                </div>
+              <img class="img-fluid mb-5" src="img/portfolio/background-generator.jpg" alt=""></a>
             <p class="mb-5">One of my first applications. A gradient background generator. It starts with the default colours, but the user can manually select both colours, left and right, or just press "Random" to generate random colours on both sides. RGB values are always displayed for the user. Made with CSS linear-gradient + JS.</p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
               <i class="fa fa-close"></i>
-              Close Project</a>
+                Close Project</a>
           </div>
         </div>
       </div>
@@ -287,7 +293,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-secondary text-uppercase mb-0">Robofriends</h2>
-            <hr class="star-dark mb-5">
+            <hr class="circle-dark mb-5">
             <a href="https://blitz3r.github.io/robofriends/" target="_blank"><img class="img-fluid mb-5" src="img/portfolio/robofriends.jpg" alt=""></a>
             <p class="mb-5">My first ReactJS app. It fetches an array of users from a fake REST API, generates a robot image for each one and displays them all as a list of cards, with some simple CSS animations on hover/click. Even made a searchbox to filter the results!</p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
@@ -309,7 +315,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-secondary text-uppercase mb-0">Task List</h2>
-            <hr class="star-dark mb-5">
+            <hr class="circle-dark mb-5">
             <a href="https://blitz3r.github.io/task-list/" target="_blank"><img class="img-fluid mb-5" src="img/portfolio/task-list.jpg" alt=""></a>
             <p class="mb-5">A simple JS task list, using various eventListeners and localStorage to preserve the data through browser refresh/restart. The user can add/remove a task, clear the whole list and mark a task as "completed" by clicking on it. Also added an input box to filter through the list.</p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
@@ -331,7 +337,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-secondary text-uppercase mb-0">Number Guesser</h2>
-            <hr class="star-dark mb-5">
+            <hr class="circle-dark mb-5">
             <a href="https://blitz3r.github.io/number-guesser/" target="_blank"><img class="img-fluid mb-5" src="img/portfolio/number-guesser.jpg" alt=""></a>
             <p class="mb-5">A simple JS number guesser. The player must guess a number between 1 and 10 in 3 attempts. Number of attempts left is displayed after each turn, together with a message, informing if the guess was correct or not. If not, the game helps the player by suggesting if they need to enter a higher or lower number. There's a button to play again on game over.</p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
@@ -353,7 +359,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-secondary text-uppercase mb-0">Loan Calculator</h2>
-            <hr class="star-dark mb-5">
+            <hr class="circle-dark mb-5">
             <a href="https://blitz3r.github.io/loan-calculator/" target="_blank"><img class="img-fluid mb-5" src="img/portfolio/loan-calculator.jpg" alt=""></a>
             <p class="mb-5">A simple loan calculator, using JS. The user inputs the loan amount, interest % and amount of years for repayment, and it calculates the monthly payment, total payment and interest amount, with a nice, simple GUI, using setTimeout() for a more engaging user experience.</p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
@@ -375,7 +381,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-secondary text-uppercase mb-0">Chuck Norris Jokes Generator</h2>
-            <hr class="star-dark mb-5">
+            <hr class="circle-dark mb-5">
             <a href="https://blitz3r.github.io/chucknorrisjokes/" target="_blank"><img class="img-fluid mb-5" src="img/portfolio/chucknorrisjokes.jpg" alt=""></a>
             <p class="mb-5">A funny little project to practice using AJAX and making HTTP requests from an external API. User inputs the number of random Chuck Norris jokes they want displayed and just presses the button!</p>
             <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
