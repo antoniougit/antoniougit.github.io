@@ -51,3 +51,7 @@ hr.circle-dark:after {
 .portfolio-modal .portfolio-item-caption:hover {
     opacity: 1;
 }
+
+.portfolio-modal a.portfolio-item {
+    position: relative;
+}
