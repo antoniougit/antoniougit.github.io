@@ -52,6 +52,6 @@ hr.circle-dark:after {
     opacity: 1;
 }
 
-.portfolio-modal a.portfolio-item {
+.project-link {
     position: relative;
 }
