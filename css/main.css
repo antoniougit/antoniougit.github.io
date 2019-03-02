@@ -1,0 +1,53 @@
+hr.circle-light,
+hr.circle-dark {
+  max-width: 15rem;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr.circle-light:after,
+hr.circle-dark:after {
+  position: relative;
+  top: -.8em;
+  display: inline-block;
+  padding: 0 0.25em;
+  content: '\f005';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2em;
+}
+
+hr.circle-light {
+  border-color: #fff;
+}
+
+hr.circle-light:after {
+  color: #fff;
+  background-color: #18BC9C;
+}
+
+hr.circle-dark {
+  border-color: #2C3E50;
+}
+
+hr.circle-dark:after {
+  color: #2C3E50;
+  background-color: white;
+}
+
+.portfolio-modal .portfolio-item-caption {
+    opacity: 0;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    background-color: rgba(24, 188, 156, 0.9);
+  }
+  
+.portfolio-modal .portfolio-item-caption:hover {
+    opacity: 1;
+}
