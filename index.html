@@ -1,522 +1,380 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 
-<head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800' rel='stylesheet' type='text/css'>
+    <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+    
+  </head>
+  <body>
+    <div class="overflow-wrap">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- HOME -->
+      <section id="home" class="flex height-fix">
+          
+        <div id="pt" class="canvas"><div id="particles-js"></div></div>
+        <div class="flex">
 
-  <title>My Website</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-  <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
-  <!-- Custom styles for this template -->
-  <link href="css/freelancer.min.css" rel="stylesheet">
-
-  <!-- My custom styles -->
-  <link href="css/main.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-    <div class="container">
-      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#home">Home</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projects</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead bg-primary text-white text-center" id="home">
-    <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
-      <h1 class="text-uppercase mb-0">Under Construction</h1> <!-- Full name goes here -->
-      <hr class="circle-light">
-      <h2 class="font-weight-light mb-0"></h2><!-- Profession goes here -->
-    </div>
-  </header>
-
-  <!-- Portfolio Grid Section -->
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Projects</h2>
-      <hr class="circle-dark mb-5">
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid border border-success" src="img/portfolio/background-generator.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid border border-success" src="img/portfolio/robofriends.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid border border-success" src="img/portfolio/task-list.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid border border-success" src="img/portfolio/number-guesser.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid border border-success" src="img/portfolio/loan-calculator.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid border border-success" src="img/portfolio/chucknorrisjokes.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-7">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid border border-success" src="img/portfolio/book-list.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-8">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid border border-success" src="img/portfolio/github-finder.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="bg-primary text-white mb-0" id="about">
-    <div class="container">
-      <h2 class="text-center text-uppercase text-white">About</h2>
-      <hr class="circle-light mb-5">
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">Computer enthusiast for as long as I can remember myself. Blahblahblah blahblah.</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">Currently in the process of learning JS/React and practicing at GitHub, in order to pursue a new career as a front-end web developer. Or maybe even go full-stack down the line!</p>
-        </div>
-      </div>
-      <!-- <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="#">
-          <i class="fas fa-download mr-2"></i>
-          Download Now!
-        </a>
-      </div> -->
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-      <hr class="circle-dark mb-5">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-          <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-          <form name="sentMessage" id="contactForm" novalidate="novalidate">
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Name</label>
-                <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Email Address</label>
-                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Message</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
+          <div class="text">
+            I'm <span class="highlight">George</span>.
             <br>
-            <div id="success"></div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+            I am an aspiring web developer.
+          </div>
+
+          <i class="mdi mdi-arrow-down-bold-hexagon-outline button page-link" dest="about"></i>
+
+          <nav class="flex">
+            <div class="link-wrap">
+              <div class="active page-link" dest="home">home</div>
+              <div class="page-link" dest="about">about</div>
+              <div class="page-link" dest="portfolio">portfolio</div>
+              <div class="page-link" dest="contact">contact</div>
             </div>
+            <i class="mdi mdi-menu"></i>
+          </nav>
+        </div>
+
+      </section>
+
+    <!-- ABOUT -->
+      <section id="about">
+        <div class="container flex">
+
+          <div class="header waypoint" data-animation="slide-in-left">ABOUT</div>
+          <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+
+          <div class="skills-wrapper flex row-gt-sm">
+            <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+              <img src="img/me.png" class="me">
+              <div class="label bold">Who am I?</div>
+              <div>
+                I am a Computer Systems Engineer (Sussex University, Brighton, UK - 2004), based in Athens, Greece.
+                <br>
+                I am trying to reinvent myself and start a new career in Web Development. Currently studying JS and practicing at GitHub to achieve my goals.
+                <br>
+                <span class="page-link highlight" dest="contact">Contact me.</span>
+              </div>
+            </div>
+
+            <div class="flex flex-50-gt-sm waypoint bars-wrap"  data-animation="slide-in-right">
+              <div class="label bold">Skills</div>
+              <div class="bar flex">
+                <div class="bar fill" style="width:85%">
+                  <div class="tag bold flex">HTML5</div>
+                </div>
+                <span>80%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:65%">
+                  <div class="tag bold flex">CSS3</div>
+                </div>
+                <span>60%</span>
+              </div>
+              
+              <div class="bar flex">
+                <div class="bar fill" style="width:60%">
+                  <div class="tag bold flex">JavaScript</div>
+                </div>
+                <span>50%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:35%">
+                  <div class="tag bold flex">ReactJS</div>
+                </div>
+                <span>20%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:35%">
+                  <div class="tag bold flex">Node.js</div>
+                </div>
+                <span>20%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:65%">
+                  <div class="tag bold flex">MySQL</div>
+                </div>
+                <span>60%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:60%">
+                  <div class="tag bold flex">PHP</div>
+                </div>
+                <span>50%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:75%">
+                  <div class="tag bold flex">Git</div>
+                </div>
+                <span>70%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:50%">
+                  <div class="tag bold flex">Photoshop</div>
+                </div>
+                <span>40%</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- PORTFOLIO -->
+      <section class="flex" id="portfolio">
+        <div class="header waypoint" data-animation="slide-in-right">PROJECTS</div>
+        <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+
+        <div class="filter-wrap waypoint" data-animation="fade-in">
+          <div class="flex row">
+            <div class="filter" data-filter=".css">HTML/CSS</div>
+            <div class="filter" data-filter=".js">JAVASCRIPT</div>
+            <div class="filter" data-filter=".other">OTHER</div>
+          </div>
+          <div class="float-bar">
+            <div class="flex row">
+              <div class="filter" data-filter=".css">HTML/CSS</div>
+              <div class="filter" data-filter=".js">JAVASCRIPT</div>
+              <div class="filter" data-filter=".other">OTHER</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="gallery" class="container flex row wrap waypoint">
+          <div class="mix css" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Gradient Background Generator</div>
+                <span class="highlight">HTML/CSS/JS</span>
+              </div>
+              <div class="button" id="background-gen"><a href="https://blitz3r.github.io/background-generator/" target="_blank">VISIT</a></div>
+            </div>
+          </div>
+
+          <div class="mix css" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">CSS Style Changer</div>
+                <span class="highlight">HTML/CSS/JS</span>
+              </div>
+              <div class="button" id="js-css-changer"><a href="https://blitz3r.github.io/js-css-changer/" target="_blank">VISIT</a></div>
+            </div>
+          </div>
+
+          <div class="mix css" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Flex Image Gallery</div>
+                <span class="highlight">HTML/CSS/JS</span>
+              </div>
+              <div class="button" id="flex-gallery"><a href="https://blitz3r.github.io/flex-gallery/" target="_blank">VISIT</a></div>
+            </div>
+          </div>
+
+          <div class="mix css" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">HTML5 Canvas</div>
+                <span class="highlight">HTML/CSS/JS</span>
+              </div>
+              <div class="button" id="html-canvas"><a href="https://blitz3r.github.io/html-canvas/" target="_blank">VISIT</a></div>
+            </div>
+          </div>
+
+          <div class="mix css" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Custom HTML5 Video Player</div>
+                <span class="highlight">HTML/CSS/JS</span>
+              </div>
+              <div class="button" id="custom-video"><a href="https://blitz3r.github.io/custom-videoplayer/" target="_blank">VISIT</a></div>
+            </div>
+          </div>
+
+
+          <div class="mix css" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Scroll Slide-In Images</div>
+                <span class="highlight">HTML/CSS/JS</span>
+              </div>
+              <div class="button" id="scroll-sliding"><a href="https://blitz3r.github.io/scroll-sliding/" target="_blank">VISIT</a></div>
+            </div>
+          </div>
+
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Task List</div>
+                <span class="highlight">Pure JS</span>
+              </div>
+              <div class="button" id="scroll-sliding"><a href="https://blitz3r.github.io/task-list/" target="_blank">VISIT</a></div>
+            </div>
+          </div>
+
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Number Guesser Game</div>
+                <span class="highlight">Pure JS</span>
+              </div>
+              <div class="button" id="scroll-sliding"><a href="https://blitz3r.github.io/number-guesser/" target="_blank">VISIT</a></div>
+            </div>
+          </div>
+
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">GitHub Finder</div>
+                <span class="highlight">Pure JS</span>
+              </div>
+              <div class="button" id="scroll-sliding"><a href="https://blitz3r.github.io/github-finder/" target="_blank">VISIT</a></div>
+            </div>
+          </div>
+
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Weather App</div>
+                <span class="highlight">Pure JS</span>
+              </div>
+              <div class="button" id="scroll-sliding"><a href="https://blitz3r.github.io/weatherjs/" target="_blank">VISIT</a></div>
+            </div>
+          </div>
+
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Drum Kit</div>
+                <span class="highlight">Pure JS</span>
+              </div>
+              <div class="button" id="scroll-sliding"><a href="https://blitz3r.github.io/drumkit/" target="_blank">VISIT</a></div>
+            </div>
+          </div>
+
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Greek Cities Population</div>
+                <span class="highlight">Pure JS</span>
+              </div>
+              <div class="button" id="scroll-sliding"><a href="https://blitz3r.github.io/ajax-typeahead/" target="_blank">VISIT</a></div>
+            </div>
+          </div>
+
+          <div class="mix other" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">RoboFriends</div>
+                <span class="highlight">ReactJS</span>
+              </div>
+              <div class="button" id="robofriends"><a href="https://blitz3r.github.io/robofriends/" target="_blank">VISIT</a></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+          <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+        </svg>
+        <div class="container flex">
+          <div class="header waypoint" data-animation="slide-in-left">CONTACT</div>
+          <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
+
+          <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form">
+            <input placeholder="Name" type="text" name="name" required>
+            <input placeholder="E-mail address" type="email" name="email" required>
+            <textarea placeholder="Your Message" type="text" name="message"></textarea>
+            <div id="success">
+              <div>Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span></div>
+            </div>
+            <input class="button" type="submit" id="submit" value=SUBMIT>
           </form>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">Athens, Greece</p>
-        </div>
-        <div class="col-md-6 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Around the Web</h4>
-          <ul class="list-inline mb-0">
-            <!-- <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                <i class="fab fa-fw fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                <i class="fab fa-fw fa-google-plus-g"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                <i class="fab fa-fw fa-twitter"></i>
-              </a> -->
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/georgeach/" target="_blank">
-                <i class="fab fa-fw fa-linkedin-in"></i>
-              </a>
-            </li>
-            <!-- <li class="list-inline-item">
-              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                <i class="fab fa-fw fa-dribbble"></i>
-              </a>
-            </li> -->
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+      <footer>
+        <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
 
-  <div class="copyright py-4 text-center text-white">
-    <div class="container">
-      <small>Copyright &copy; BLiTzER 2019</small>
-    </div>
-  </div>
-
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-to-top d-lg-none position-fixed ">
-    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
-
-  <!-- Portfolio Modals -->
-
-  <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Gradient Background Generator</h2>
-            <hr class="circle-dark mb-5">
-            <a class="project-link d-block mx-auto mb-5" href="https://blitz3r.github.io/background-generator/" target="_blank">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                  <div class=" my-auto w-100 text-center text-white">
-                    <i class="fas fa-link fa-3x"></i>
-                  </div>
-                </div>
-              <img class="img-fluid border border-success" src="img/portfolio/background-generator.jpg" alt=""></a>
-            <p class="mb-5">One of my first applications. A gradient background generator. It starts with the default colours, but the user can manually select both colours, left and right, or just press "Random" to generate random colours on both sides. RGB values are always displayed for the user. Made with CSS linear-gradient + JS.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-                Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Robofriends</h2>
-            <hr class="circle-dark mb-5">
-            <a class="project-link d-block mx-auto mb-5" href="https://blitz3r.github.io/robofriends/" target="_blank">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class=" my-auto w-100 text-center text-white">
-                  <i class="fas fa-link fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid border border-success" src="img/portfolio/robofriends.jpg" alt=""></a>
-            <p class="mb-5">My first ReactJS app. It fetches an array of users from a fake REST API, generates a robot image for each one and displays them all as a list of cards, with some simple CSS animations on hover/click. Even made a searchbox to filter the results!</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Task List</h2>
-            <hr class="circle-dark mb-5">
-            <a class="project-link d-block mx-auto mb-5" href="https://blitz3r.github.io/task-list/" target="_blank">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class=" my-auto w-100 text-center text-white">
-                  <i class="fas fa-link fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid border border-success" src="img/portfolio/task-list.jpg" alt=""></a>
-            <p class="mb-5">A simple JS task list, using various eventListeners and localStorage to preserve the data through browser refresh/restart. The user can add/remove a task, clear the whole list and mark a task as "completed" by clicking on it. Also added an input box to filter through the list.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Number Guesser</h2>
-            <hr class="circle-dark mb-5">
-            <a class="project-link d-block mx-auto mb-5" href="https://blitz3r.github.io/number-guesser/" target="_blank">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class=" my-auto w-100 text-center text-white">
-                  <i class="fas fa-link fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid border border-success" src="img/portfolio/number-guesser.jpg" alt=""></a>
-            <p class="mb-5">A simple JS number guesser. The player must guess a number between 1 and 10 in 3 attempts. Number of attempts left is displayed after each turn, together with a message, informing if the guess was correct or not. If not, the game helps the player by suggesting if they need to enter a higher or lower number. There's a button to play again on game over.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Loan Calculator</h2>
-            <hr class="circle-dark mb-5">
-            <a class="project-link d-block mx-auto mb-5" href="https://blitz3r.github.io/loan-calculator/" target="_blank">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class=" my-auto w-100 text-center text-white">
-                  <i class="fas fa-link fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid border border-success" src="img/portfolio/loan-calculator.jpg" alt=""></a>
-            <p class="mb-5">A simple loan calculator, using JS. The user inputs the loan amount, interest % and amount of years for repayment, and it calculates the monthly payment, total payment and interest amount, with a nice, simple GUI, using setTimeout() for a more engaging user experience.</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">Chuck Norris Jokes Generator</h2>
-            <hr class="circle-dark mb-5">
-            <a class="project-link d-block mx-auto mb-5" href="https://blitz3r.github.io/chucknorrisjokes/" target="_blank">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class=" my-auto w-100 text-center text-white">
-                  <i class="fas fa-link fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid border border-success" src="img/portfolio/chucknorrisjokes.jpg" alt=""></a>
-            <p class="mb-5">A funny little project to practice using AJAX and making HTTP requests from an external API. User inputs the number of random Chuck Norris jokes they want displayed and just presses the button!</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <!-- Portfolio Modal 7 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-7">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Book List</h2>
-              <hr class="circle-dark mb-5">
-              <a class="project-link d-block mx-auto mb-5" href="https://blitz3r.github.io/book-list/" target="_blank">
-                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                  <div class=" my-auto w-100 text-center text-white">
-                    <i class="fas fa-link fa-3x"></i>
-                  </div>
-                </div>
-                <img class="img-fluid border border-success" src="img/portfolio/book-list.jpg" alt=""></a>
-              <p class="mb-5">A simple object-oriented JS book list, created first using ES5 constructors & prototypes and then ES6 classes. Also has localStorage functionality, to preserve data through browser refresh and restart.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
+        <div class="icon-wrap flex row">
+          <a href="https://www.linkedin.com/in/georgeach" target="_blank">
+            <div class="flex icon" id="icon-2">
+              <i class="mdi mdi-linkedin"></i>
             </div>
-          </div>
+          </a>
+          <!-- <a href="https://www.facebook.com/">
+            <div class="flex icon" id="icon-3">
+              <i class="mdi mdi-facebook"></i>
+            </div>
+          </a>
+          <a href="https://instagram.com/">
+            <div class="flex icon" id="icon-4">
+              <i class="mdi mdi-instagram"></i>
+            </div>
+          </a> -->
+          <a href="https://github.com/BLiTz3R" target="_blank">
+            <div class="flex icon" id="icon-5">
+              <i class="mdi mdi-github-circle"></i>
+            </div>
+          </a>
         </div>
-      </div>
+        <div class="info-box">
+          <div class="footnote"><span class="highlight">&copy;2019</span></div>
+        </div>
+      </footer>
+
     </div>
 
-      <!-- Portfolio Modal 8 -->
-  <div class="portfolio-modal mfp-hide" id="portfolio-modal-8">
-    <div class="portfolio-modal-dialog bg-white">
-      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-        <i class="fa fa-3x fa-times"></i>
-      </a>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-secondary text-uppercase mb-0">GitHub Finder</h2>
-            <hr class="circle-dark mb-5">
-            <a class="project-link d-block mx-auto mb-5" href="https://blitz3r.github.io/github-finder/" target="_blank">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class=" my-auto w-100 text-center text-white">
-                  <i class="fas fa-link fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid border border-success" src="img/portfolio/github-finder.jpg" alt=""></a>
-            <p class="mb-5">User inputs a GitHub username, presses button, and various data is fetched and displayed about the given GH account, like his avatar image, how many repos and followers they have, 5 last active repos with links and much more!</p>
-            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-              <i class="fa fa-close"></i>
-              Close Project</a>
-          </div>
-        </div>
-      </div>
+    <div id="preload">
+      <img src="/img/me.png"/>
+      <img src="/img/thumb-1.jpg"/>
+      <img src="/img/thumb-2.jpg"/>
+      <img src="/img/thumb-3.jpg"/>
+      <img src="/img/thumb-4.jpg"/>
+      <img src="/img/thumb-5.jpg"/>
+      <img src="/img/thumb-6.jpg"/>
+      <img src="/img/thumb-7.jpg"/>
+      <img src="/img/thumb-8.jpg"/>
+      <img src="/img/thumb-9.jpg"/>
+      <img src="/img/thumb-10.jpg"/>
+      <img src="/img/thumb-11.jpg"/>
+      <img src="/img/thumb-12.jpg"/>
+      <img src="/img/thumb-13.jpg"/>
     </div>
-  </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="scripts/particles.js"></script>
+    <script src="scripts/index.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/freelancer.min.js"></script>
-
-</body>
-
+  </body>
 </html>
+
