@@ -145,25 +145,6 @@ $(function() {
 
   setTimeout(function() { onScrollInit($('.waypoint')) }, 10);
 
-  // CONTACT FORM
-  // $('#contact-form').submit(function(e) {
-  //   e.preventDefault();
-
-  //     $.ajax({
-  //         url: "https://formspree.io/bl1723r@gmail.com",
-  //         method: "POST",
-  //         data: { message: $('form').serialize() },
-  //         dataType: "json"
-  //     }).done(function() {
-  //         $('#success').addClass('expand');
-  //         $('#contact-form').find("input[type=text], input[type=email], textarea").val("");
-  //     });
-  // });
-
-  // $('#close').click(function() {
-  //   $('#success').removeClass('expand');
-  // })
-
 });
 
 
