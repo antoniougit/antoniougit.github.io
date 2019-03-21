@@ -150,7 +150,7 @@ $(function() {
     e.preventDefault();
 
       $.ajax({
-          url: "https://formspree.io/bl1723r@gmail.com",
+          url: "//formspree.io/bl1723r@gmail.com",
           method: "POST",
           data: { message: $('form').serialize() },
           dataType: "json"
