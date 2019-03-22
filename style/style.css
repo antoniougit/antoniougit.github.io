@@ -1,3 +1,13 @@
+/* ---- particles.js container ---- */
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+/* ---- particles.js container ---- */
+
+/* ----- Custom CSS ------ */
 @font-face {
   font-family: 'Raleway';
   src: url("../fonts/Raleway-Regular.ttf"); }
@@ -745,11 +755,3 @@ footer {
     font-size: 13pt;
     padding: 0 40px;
     margin: 0 25px; }
-
-/* ---- particles.js container ---- */
-#particles-js{
-  width: 100%;
-  height: 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
