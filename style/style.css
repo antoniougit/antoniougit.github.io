@@ -285,6 +285,8 @@ section {
       height: 200px; }
     section:nth-of-type(2) .skills-wrapper .label {
       margin: 20px 0 15px 0; }
+    section:nth-of-type(2) .skills-wrapper #skills {
+      padding-right: 5%; }
   section:nth-of-type(2) .bars-wrap {
     margin: 50px auto 0 auto;
     width: calc(100% - 15px);
