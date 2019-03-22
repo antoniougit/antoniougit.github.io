@@ -125,7 +125,7 @@ body {
     border: none;
     vertical-align: middle; }
     .button.mdi:hover {
-      color: #53EFE0; }
+      color: #FF5A09; }
 
 .bold {
   font-family: 'Raleway-bold'; }
@@ -140,44 +140,11 @@ body {
   .flex.wrap {
     flex-wrap: wrap; }
 
-.hex-wrap {
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  width: 80px;
-  height: 80px; }
-
-.hexagon {
-  background-color: #046EC9;
-  height: 100%;
-  width: calc(100% * 0.57735);
-  display: inline-block; }
-
-.hexagon:before {
-  position: absolute;
-  top: 0;
-  right: calc((100% / 2) - ((100% * 0.57735) / 2));
-  background-color: inherit;
-  height: inherit;
-  width: inherit;
-  content: '';
-  transform: rotateZ(60deg); }
-
-.hexagon:after {
-  position: absolute;
-  top: 0;
-  right: calc((100% / 2) - ((100% * 0.57735) / 2));
-  background-color: inherit;
-  height: inherit;
-  width: inherit;
-  content: '';
-  transform: rotateZ(-60deg); }
-
 .page-link {
   cursor: pointer;
 }
   .highlight {
-  color: #53EFE0; }
+  color: #FF5A09; }
 
 .header {
   font-size: 25pt;
@@ -207,7 +174,7 @@ nav {
   height: 50px;
   width: 100%;
   background: #1B242F;
-  border-bottom: 3px solid #046EC9;
+  border-bottom: 3px solid #FF5A09;
   text-align: left;
   z-index: 99; }
   nav.fixed {
@@ -237,7 +204,7 @@ nav {
       nav .link-wrap div:first-child {
         padding: 25px 20px 12px 20px; }
       nav .link-wrap div:hover {
-        color: #53EFE0; }
+        color: #FF5A09; }
   nav .mdi-menu {
     position: absolute;
     right: 5vw;
@@ -246,140 +213,16 @@ nav {
     line-height: 36pt;
     top: 0; }
   nav .active {
-    color: #53EFE0; }
-
-.carousel-wrap {
-  position: relative;
-  height: 250px;
-  margin: 0 auto; }
+    color: #FF5A09; }
 
 .window {
   overflow: hidden;
   position: relative;
   background: #222; }
 
-#carousel {
-  width: 10000px;
-  position: relative;
-  top: 0; }
-
-.slide {
-  height: 250px;
-  cursor: pointer;
-  float: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.mdi-chevron-left, .mdi-chevron-right {
-  cursor: pointer;
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 14pt !important;
-  font-weight: bold;
-  color: #fff; }
-
-.mdi-chevron-left {
-  left: 0; }
-
-.mdi-chevron-right {
-  right: 0; }
-
 .transition {
   transition: .7s; }
 
-.modal-wrap {
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  pointer-events: none;
-  z-index: 100; }
-  .modal-wrap .mask {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transition: opacity .3s; }
-  .modal-wrap .modal {
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    position: relative;
-    transition: all .3s;
-    transform: scale(0.8);
-    opacity: 0;
-    align-items: flex-start;
-    text-align: left;
-    box-sizing: border-box;
-    color: #333;
-    height: 100vh; }
-  .modal-wrap .close {
-    bottom: 25px;
-    right: 10px;
-    color: #bbb;
-    font-size: 20pt;
-    position: absolute;
-    font-weight: 800;
-    cursor: pointer; }
-  .modal-wrap .info-box {
-    border-top: 3px solid #1B242F;
-    padding: 15px 10px 85px 10px;
-    box-sizing: border-box;
-    color: #444; }
-  .modal-wrap .title {
-    font-size: 16pt;
-    line-height: 20pt;
-    font-family: 'Raleway-bold'; }
-  .modal-wrap .tag {
-    display: block;
-    font-weight: 300;
-    color: #c0c0c0;
-    font-family: 'Raleway-bold';
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 15px;
-    font-size: 8pt; }
-  .modal-wrap .detail {
-    font-size: 9pt;
-    line-height: 14pt;
-    margin-top: 13px; }
-  .modal-wrap .mdi-open-in-new {
-    position: relative;
-    left: -10px;
-    font-size: 11pt; }
-  .modal-wrap .button {
-    padding: 11px 30px;
-    font-size: 10pt;
-    transition: all .5s;
-    cursor: pointer;
-    background: #53EFE0;
-    color: #fff;
-    font-weight: 600;
-    border: 0;
-    pointer-events: none;
-    visibility: hidden;
-    position: absolute;
-    bottom: 20px;
-    left: 10px; }
-    .modal-wrap .button.visible {
-      pointer-events: initial;
-      visibility: visible; }
-    .modal-wrap .button:hover {
-      color: #53EFE0;
-      background: #fff; }
-  .modal-wrap .carousel {
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25); }
-  .modal-wrap.visible {
-    pointer-events: initial; }
-    .modal-wrap.visible .modal {
-      transform: scale(1);
-      opacity: 1; }
-    .modal-wrap.visible .mask {
-      opacity: 1; }
 section {
   padding: 70px 0 70px 0;
   color: #616161;
@@ -403,10 +246,6 @@ section {
       line-height: 20pt;
       z-index: 1;
       pointer-events: none; }
-    section:nth-of-type(1) .hexagon {
-      transition: transform .9s ease-in-out; }
-      section:nth-of-type(1) .hexagon:hover {
-        transform: rotate(540deg); }
     section:nth-of-type(1) .button {
       padding: 12px 40px 12px 15px;
       position: relative;
@@ -425,7 +264,7 @@ section {
     padding: 0 7px;
     height: 200px; }
   section:nth-of-type(2) .highlight {
-    color: #009ADA; }
+    color: #FF5A09; }
   section:nth-of-type(2) .up-arrow {
     margin: 15px 0;
     height: 30px; }
@@ -436,14 +275,6 @@ section {
       height: 200px; }
     section:nth-of-type(2) .skills-wrapper .label {
       margin: 20px 0 15px 0; }
-  section:nth-of-type(2) .hexagon i {
-    position: absolute;
-    top: 20px;
-    font-size: 34pt;
-    color: #fff;
-    left: 0;
-    right: 0;
-    z-index: 1; }
   section:nth-of-type(2) .bars-wrap {
     margin: 50px auto 0 auto;
     width: calc(100% - 15px);
@@ -484,22 +315,22 @@ section {
       top: 0;
       left: 0;
       position: absolute;
-      background-color: #0098A7;
+      background-color: #EC7F37;
       padding: 0;
       opacity: 1; }
     section:nth-of-type(2) .bar .tag {
       top: 0;
       left: 0;
       position: absolute;
-      background-color: #046EC9;
+      background-color: #BE4F0C;
       color: #fff;
       height: 100%;
       width: 110px;
       width: 70px; }
     section:nth-of-type(2) .bar.secondary {
-      background-color: #C51675; }
+      background-color: #FF5A09; }
       section:nth-of-type(2) .bar.secondary .tag {
-        background-color: #53EFE0; }
+        background-color: #FF5A09; }
     section:nth-of-type(2) .bar span {
       z-index: 1;
       padding: 0 15px 0 0; }
@@ -525,7 +356,7 @@ section {
       overflow: hidden;
       height: 25px;
       border-radius: 1px;
-      background: #53EFE0;
+      background: #FF5A09;
       transition: all .5s ease-in-out; }
       section:nth-of-type(3) .float-bar .row {
         top: 0;
@@ -556,7 +387,7 @@ section {
         bottom: 0;
         left: 0;
         position: absolute;
-        border: 2px solid #53EFE0;
+        border: 2px solid #FF5A09;
         width: 170px;
         margin: 0 auto;
         font-size: 13pt;
@@ -567,7 +398,7 @@ section {
         section:nth-of-type(3) #gallery .mix .waypoint {
           background: #fff; }
         section:nth-of-type(3) #gallery .mix .button:hover {
-          background: #53EFE0;
+          background: #FF5A09;
           color: #fff; }
         section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
           background: url("../img/thumb-1.jpg") center center/cover; }
@@ -629,7 +460,7 @@ section {
       width: 110px; }
     section:nth-of-type(4) .highlight {
       font-weight: 600;
-      color: #046EC9; }
+      color: #FF5A09; }
     section:nth-of-type(4) svg {
       position: absolute;
       top: 0;
@@ -658,10 +489,13 @@ section {
       padding: 10px 30px;
       color: #fff;
       background: transparent;
-      outline: 0; }
+      outline: 0;
+      transition: all 0.5s }
       section:nth-of-type(4) .button:hover {
-        color: #53EFE0;
-        border-color: #53EFE0 }
+        color: #FFF;
+        background-color: #FF5A09; 
+        border-color: #FF5A09; 
+        box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1); }
     section:nth-of-type(4) #success {
       height: 0;
       width: 100%;
@@ -692,7 +526,7 @@ footer {
   footer .mdi-chevron-double-up {
     position: absolute;
     top: -25px;
-    background: #0098A7;
+    background: #FF5A09;
     font-size: 30pt;
     width: 47px;
     height: 50px;
@@ -701,9 +535,10 @@ footer {
     right: 0;
     margin: 0 auto;
     cursor: pointer;
-    transition: background .5s; }
+    transition: all 0.5s; }
     footer .mdi-chevron-double-up:hover {
-      background: #53EFE0; }
+      box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
+      transform: scale(0.9); }
   footer .icon-wrap .icon {
     overflow: hidden;
     transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
@@ -718,15 +553,20 @@ footer {
   footer .icon-wrap .mdi {
     text-align: center;
     color: #fff; }
-    footer .icon-wrap .mdi.mdi-codepen {
-      font-size: 20pt; }
-  footer .icon-wrap .icon:hover {
+  footer .icon-wrap #icon-1:hover {
     background: #046EC9;
     box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
     transform: scale(0.9); }
-    footer .icon-wrap .icon:hover .mdi {
-      color: #fff; }
-  footer .icon-wrap .icon:hover .mdi {
+  footer .icon-wrap #icon-2:hover {
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
+    transform: scale(0.9); }
+  footer .icon-wrap #icon-1:hover .mdi {
+    -webkit-animation: toBottomFromTop 0.3s forwards;
+    -moz-animation: toBottomFromTop 0.3s forwards;
+    animation: toBottomFromTop 0.3s forwards; }
+  footer .icon-wrap #icon-2:hover .mdi {
+    color: #262F38;
     -webkit-animation: toBottomFromTop 0.3s forwards;
     -moz-animation: toBottomFromTop 0.3s forwards;
     animation: toBottomFromTop 0.3s forwards; }
@@ -737,7 +577,7 @@ footer {
     opacity: 0.6; }
     footer .footnote .highlight {
       font-family: 'Open Sans';
-      color: #53EFE0; }
+      color: #FF5A09; }
 
 @media screen and (max-width: 400px) {
   section:nth-of-type(3) #gallery .mix .card {
@@ -758,36 +598,7 @@ footer {
   .label {
     font-size: 18pt; }
 
-  .hex-wrap {
-    height: 100px;
-    width: 100px; }
-
-  .slide, .carousel-wrap {
-    height: 450px; }
-
-  .mdi-chevron-left, .mdi-chevron-right {
-    font-size: 25pt !important; }
-
-  .modal-wrap .modal {
-    top: -6vh;
-    height: initial; }
-  .modal-wrap .info-box {
-    padding: 35px 60px 90px 25px; }
-  .modal-wrap .title {
-    font-size: 22pt;
-    line-height: 30pt; }
-  .modal-wrap .tag {
-    font-size: 11pt; }
-  .modal-wrap .detail {
-    font-size: 11pt;
-    line-height: 18pt;
-    margin-top: 15px; }
-  .modal-wrap .close {
-    right: 25px; }
-  .modal-wrap .button {
-    left: 25px; }
-
-  nav .link-wrap {
+   nav .link-wrap {
     position: initial;
     background: none;
     overflow: visible;
@@ -857,8 +668,6 @@ footer {
       section:nth-of-type(4) .text {
         font-size: 11pt;
         line-height: 15pt; }
-      /* section:nth-of-type(4) .blog-wrap {
-        width: 400px; } */
       section:nth-of-type(4) .thumb {
         height: 200px; }
     section:nth-of-type(4) form {
@@ -943,3 +752,34 @@ footer {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+
+/* MaterialDesignIcons.com */
+@font-face {
+  font-family:"Material Design Icons";
+  src: url("../fonts/materialdesignicons-webfont.eot?v=3.5.95");
+  src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=3.5.95") format("embedded-opentype"), 
+  url("../fonts/materialdesignicons-webfont.woff2?v=3.5.95") format("woff2"), 
+  url("../fonts/materialdesignicons-webfont.woff?v=3.5.95") format("woff"), 
+  url("../fonts/materialdesignicons-webfont.ttf?v=3.5.95") format("truetype"), 
+  url("../fonts/materialdesignicons-webfont.svg?v=3.5.95#materialdesigniconsregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+  .mdi:before,.mdi-set {
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    line-height: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .mdi-arrow-down-bold-hexagon-outline:before{ content:"\F049"; }
+  .mdi-menu:before{ content:"\F35C"; }
+  .mdi-close:before{ content:"\F156"; }
+  .mdi-chevron-double-up:before{ content:"\F13F"; }
+  .mdi-linkedin:before{ content:"\F33B"; }
+  .mdi-github-circle:before{ content:"\F2A4"; }
+  .mdi-facebook:before{ content:"\F20C"; }
+  .mdi-instagram:before{ content:"\F2FE"; }
+  /*# sourceMappingURL=materialdesignicons.min.css.map */
