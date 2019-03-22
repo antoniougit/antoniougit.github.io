@@ -383,23 +383,22 @@ section {
         section:nth-of-type(3) #gallery .text .bold, section:nth-of-type(3) #gallery .button .bold {
           font-size: 16pt; }
       section:nth-of-type(3) #gallery .button {
+        border: none;
+        color: #FF5A09;
         right: 0;
         bottom: 0;
         left: 0;
         position: absolute;
-        border: 2px solid #FF5A09;
         width: 170px;
         margin: 0 auto;
         font-size: 13pt;
+        font-weight: bold;
         padding: 7px 0; }
       section:nth-of-type(3) #gallery .mix {
         display: none;
         position: relative; }
         section:nth-of-type(3) #gallery .mix .waypoint {
           background: #fff; }
-        section:nth-of-type(3) #gallery .mix .button:hover {
-          background: #FF5A09;
-          color: #fff; }
         section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
           background: url("../img/thumb-1.jpg") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
@@ -433,19 +432,21 @@ section {
         section:nth-of-type(3) #gallery .mix:nth-child(16) .card {
           background: url("../img/thumb-16.jpg") center center/cover; }
         section:nth-of-type(3) #gallery .mix .card {
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); 
           height: 240px;
           max-width: 100%;
           width: calc(50vw - 8px);
           cursor: pointer;
-          transition: opacity .5s; }
+          transition: all .5s; }
         section:nth-of-type(3) #gallery .mix:hover .card {
-          opacity: 0; }
+          opacity: 0.1; 
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); }
         section:nth-of-type(3) #gallery .mix:hover .text {
           opacity: 1;
           top: 24%; }
         section:nth-of-type(3) #gallery .mix:hover .button {
           opacity: 1;
-          bottom: 24%; }
+          bottom: 6%; }
   section .flex-50-gt-sm {
     display: block; }
   section:nth-of-type(4) {
