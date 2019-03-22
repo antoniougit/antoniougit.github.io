@@ -450,6 +450,8 @@ section {
           width: calc(50vw - 8px);
           cursor: pointer;
           transition: all .5s; }
+        section:nth-of-type(3) #gallery .mix .card-desc {
+          margin-top: 10px; }
         section:nth-of-type(3) #gallery .mix:hover .card {
           opacity: 0.1; 
           box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); }
