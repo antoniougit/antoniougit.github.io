@@ -48,6 +48,9 @@ $(function() {
     }
 
     // Link Highlighting
+    const emid = 'bl1723r',
+          emhost = 'gmail',
+          emdom = '.com';
     if (pos2 > $('#home').offset().top)       { highlightLink('home'); }
     if (pos2 > $('#about').offset().top)      { highlightLink('about'); }
     if (pos2 > $('#portfolio').offset().top)  { highlightLink('portfolio'); }
@@ -55,6 +58,8 @@ $(function() {
       scrollBottom === $(document).height()) {
           highlightLink('contact');
     }
+
+    document.getElementById("contact-form").action = `https://formspree.io/${emid}@${emhost}.${emdom}`;
 
     // Prevent Hover on Scroll
     clearTimeout(lockTimer);
