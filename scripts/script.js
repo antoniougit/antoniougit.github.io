@@ -27,9 +27,12 @@ $(function() {
   particlesJS.load('particles-js', 'scripts/particles.json');
 
   // NAV POSITION
+  const emdom = 'com';
   var navPos = $('nav').position().top;
   var lastPos = 0;
-  var lockTimer
+  var lockTimer;
+  const emhost = 'gmail';
+  
 
   $(window).on('scroll', function () {
 
@@ -48,9 +51,7 @@ $(function() {
     }
 
     // Link Highlighting
-    const emid = 'bl1723r',
-          emhost = 'gmail',
-          emdom = '.com';
+    const emid = 'bl1723r';
     if (pos2 > $('#home').offset().top)       { highlightLink('home'); }
     if (pos2 > $('#about').offset().top)      { highlightLink('about'); }
     if (pos2 > $('#portfolio').offset().top)  { highlightLink('portfolio'); }
