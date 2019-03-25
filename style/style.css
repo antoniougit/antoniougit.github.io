@@ -17,6 +17,15 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+input,
+textarea,
+select,
+button {
+  color: inherit; 
+  font: inherit; 
+  letter-spacing: inherit; 
+}
+
 @keyframes fadeIn {
   100% {
     opacity: 1; } }
@@ -761,3 +770,4 @@ footer {
     font-size: 13pt;
     padding: 0 40px;
     margin: 0 25px; }
+    
