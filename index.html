@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+      <meta name="description" content="George's, an aspiring web developer's, personal cv and portfolio website.">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
-    
+      <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+      <link rel="stylesheet" href="style/style.css">
+      <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+      
+      <title>blitz3r.github.io</title>
   </head>
   <body>
     <div class="overflow-wrap">
@@ -23,14 +27,14 @@
             I am an aspiring web developer.
           </div>
 
-          <i class="mdi mdi-arrow-down-bold-hexagon-outline button page-link" dest="about"></i>
+          <i class="mdi mdi-arrow-down-bold-hexagon-outline button page-link" data-dest="about"></i>
 
           <nav class="flex">
             <div class="link-wrap">
-              <div class="active page-link" dest="home">home</div>
-              <div class="page-link" dest="about">about</div>
-              <div class="page-link" dest="portfolio">portfolio</div>
-              <div class="page-link" dest="contact">contact</div>
+              <div class="active page-link" data-dest="home">home</div>
+              <div class="page-link" data-dest="about">about</div>
+              <div class="page-link" data-dest="portfolio">portfolio</div>
+              <div class="page-link" data-dest="contact">contact</div>
             </div>
             <i class="mdi mdi-menu"></i>
           </nav>
@@ -47,14 +51,14 @@
 
           <div class="skills-wrapper flex row-gt-sm">
             <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
-              <img src="img/me.png" class="me">
+              <img src="img/me.png" alt="my photo" class="me">
               <div class="label bold">Who am I?</div>
               <div>
                 I am a Computer Systems Engineer (University of Sussex, Brighton, UK - 2004), based in Athens, Greece.
                 <br>
                 I am trying to reinvent myself and start a new career in Web Development. Currently studying JS and practicing at GitHub to achieve my goals.
                 <br>
-                <span class="page-link highlight" dest="contact">Contact me.</span>
+                <span class="page-link highlight" data-dest="contact">Contact me.</span>
               </div>
             </div>
 
@@ -244,7 +248,7 @@
                   <span class="highlight">Pure JS</span>
                   <div class="card-desc">A simple task list. User can add or delete a task, clear the whole list, mark a task as "done" by clicking on it, and the data persists through reloads and browser restarts, using localStorage.</div>
                 </div>
-                <div class="button" id="scroll-sliding">Click to visit!</div>
+                <div class="button" id="task-list">Click to visit!</div>
              </a>
             </div>
           </div>
@@ -258,7 +262,7 @@
                   <span class="highlight">Pure JS</span>
                   <div class="card-desc">A simple Guess-the-number game. Player must guess a number between 1 and 10, in 3 attempts, and he is notified of how many attempts are left and if the number is higher or lower each time. Good luck!</div>
                 </div>
-                <div class="button" id="scroll-sliding">Click to visit!</div>
+                <div class="button" id="number-guesser">Click to visit!</div>
              </a>
             </div>
           </div>
@@ -272,7 +276,7 @@
                   <span class="highlight">Pure JS</span>
                   <div class="card-desc">User inputs a GitHub username, clicks "Go", and various data is fetched and displayed for the given GH account, like his avatar image, how many followers they have, 5 latest repos with links and much more.</div>
                 </div>
-                <div class="button" id="scroll-sliding">Click to visit!</div>
+                <div class="button" id="github-finder">Click to visit!</div>
               </a>
             </div>
           </div>
@@ -286,7 +290,7 @@
                   <span class="highlight">Pure JS</span>
                   <div class="card-desc">User inputs a location and the current weather is displayed, together with temperature, wind direction and speed etc. The app uses localStorage to save the location entered. Made using OpenWeatherMap API.</div>
                 </div>
-                <div class="button" id="scroll-sliding">Click to visit!</div>
+                <div class="button" id="weatherjs">Click to visit!</div>
              </a>
             </div>
           </div>
@@ -300,7 +304,7 @@
                   <span class="highlight">Pure JS</span>
                   <div class="card-desc">A drum kit that plays drum sounds on keypress or click. Enjoy!</div>
                 </div>
-                <div class="button" id="scroll-sliding">Click to visit!</div>
+                <div class="button" id="drumkit">Click to visit!</div>
               </a>
             </div>
           </div>
@@ -314,7 +318,7 @@
                   <span class="highlight">Pure JS</span>
                   <div class="card-desc">It displays city names and their population as the user is typing.</div>
                 </div>
-                <div class="button" id="scroll-sliding">Click to visit!</div>
+                <div class="button" id="ajax-typeahead">Click to visit!</div>
               </a>
             </div>
           </div>
@@ -347,7 +351,7 @@
           <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form" method="POST">
             <input placeholder="Name" type="text" name="name" required>
             <input placeholder="E-mail address" type="email" name="email" required>
-            <textarea placeholder="Message" type="text" name="message" required></textarea>
+            <textarea placeholder="Message" name="message" required></textarea>
             <input class="button" type="submit" id="submit" value="Send">
           </form>
         </div>
@@ -355,7 +359,7 @@
         
       <!-- FOOTER -->
       <footer>
-        <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+        <i class="mdi mdi-chevron-double-up page-link" data-dest="home"></i>
 
         <div class="icon-wrap flex row">
           <a href="https://www.linkedin.com/in/georgeach" target="_blank">
@@ -370,27 +374,27 @@
           </a>
         </div>
         <div class="info-box">
-          <div class="footnote"><span>&copy;2019</span></div>
+          <div class="footnote"><span>2019 &copy; All rights reserved.</span></div>
         </div>
       </footer>
     </div>
 
     <!-- PRELOAD -->
     <div id="preload">
-      <img src="/img/me.png"/>
-      <img src="/img/thumb-1.jpg"/>
-      <img src="/img/thumb-2.jpg"/>
-      <img src="/img/thumb-3.jpg"/>
-      <img src="/img/thumb-4.jpg"/>
-      <img src="/img/thumb-5.jpg"/>
-      <img src="/img/thumb-6.jpg"/>
-      <img src="/img/thumb-7.jpg"/>
-      <img src="/img/thumb-8.jpg"/>
-      <img src="/img/thumb-9.jpg"/>
-      <img src="/img/thumb-10.jpg"/>
-      <img src="/img/thumb-11.jpg"/>
-      <img src="/img/thumb-12.jpg"/>
-      <img src="/img/thumb-13.jpg"/>
+      <img src="/img/me.png" alt="myself">
+      <img src="/img/thumb-1.jpg" alt="project 1 thumbnail">
+      <img src="/img/thumb-2.jpg" alt="project 2 thumbnail">
+      <img src="/img/thumb-3.jpg" alt="project 3 thumbnail">
+      <img src="/img/thumb-4.jpg" alt="project 4 thumbnail">
+      <img src="/img/thumb-5.jpg" alt="project 5 thumbnail">
+      <img src="/img/thumb-6.jpg" alt="project 6 thumbnail">
+      <img src="/img/thumb-7.jpg" alt="project 7 thumbnail">
+      <img src="/img/thumb-8.jpg" alt="project 8 thumbnail">
+      <img src="/img/thumb-9.jpg" alt="project 9 thumbnail">
+      <img src="/img/thumb-10.jpg" alt="project 10 thumbnail">
+      <img src="/img/thumb-11.jpg" alt="project 11 thumbnail">
+      <img src="/img/thumb-12.jpg" alt="project 12 thumbnail">
+      <img src="/img/thumb-13.jpg" alt="project 13 thumbnail">
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

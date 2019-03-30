@@ -75,17 +75,17 @@ $(function() {
 
   function highlightLink(anchor) {
     $('nav .active').removeClass('active');
-    $("nav").find('[dest="' + anchor + '"]').addClass('active');
+    $("nav").find('[data-dest="' + anchor + '"]').addClass('active');
   }
 
 
   // EVENT HANDLERS
   $('.page-link').click(function() {
-    var anchor = $(this).attr("dest");
+    var anchor = $(this).attr("data-dest");
     $('.link-wrap').removeClass('visible');
 
     $('nav span').removeClass('active');
-    $("nav").find('[dest="'+ anchor +'"]').addClass('active');
+    $("nav").find('[data-dest="'+ anchor +'"]').addClass('active');
 
     $('html, body').animate({
       scrollTop: $('#' + anchor).offset().top
