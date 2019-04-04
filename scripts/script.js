@@ -11,7 +11,7 @@ $(function() {
    })
   }
 
-  // RESIZE RESETS
+  // Resize resets
   $(window).resize(function(){
     posFilterBar($('.filter').first());
   });
@@ -26,7 +26,7 @@ $(function() {
   // Canvas particles - particlesJS.load(@dom-id, @path-json, @callback (optional)); //
   particlesJS.load('particles-js', 'scripts/particles.json');
 
-  // NAV POSITION
+  // Nav position
   const emdom = 'com';
   var navPos = $('nav').position().top;
   var lastPos = 0;
@@ -79,7 +79,7 @@ $(function() {
   }
 
 
-  // EVENT HANDLERS
+  // Event handlers
   $('.page-link').click(function() {
     var anchor = $(this).attr("data-dest");
     $('.link-wrap').removeClass('visible');
@@ -112,7 +112,7 @@ $(function() {
     $('.float-bar .row').css('left', (pos - origin) * -1);
   }
 
-  // GALLERY
+  // Gallery
   $('#gallery').mixItUp({ 
     load: {
       filter: '.css'
@@ -123,7 +123,7 @@ $(function() {
     setTimeout(function() { $('#gallery').removeClass('waypoint') }, 2000);
   }
 
-  // SCROLL ANIMATIONS
+  // Scroll animations
   function onScrollInit( items, elemTrigger ) {
     var offset = $(window).height() / 1.6
     items.each( function() {
@@ -141,7 +141,7 @@ $(function() {
 
           trigger.waypoint(function() {
             elem.addClass('animated').addClass(animationClass);
-            if (elem.get(0).id === 'gallery') mixClear(); //OPTIONAL
+            if (elem.get(0).id === 'gallery') mixClear(); // Optional
             },{
                 triggerOnce: true,
                 offset: offset
