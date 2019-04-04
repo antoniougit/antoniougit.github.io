@@ -1,399 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-      <meta name="description" content="Blitz WebDev Website & Application Development.">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-      <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
-      <link rel="stylesheet" href="style/style.css">
-      <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
-      
-      <title>Blitz WebDev - Website & Application Development</title>
-  </head>
-  <body>
-    <div class="overflow-wrap">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="Blitz WebDev Website & Application Development.">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+
+  <title>Blitz WebDev - Website & Application Development</title>
+</head>
+
+<body>
+  <div class="overflow-wrap">
 
     <!-- HOME -->
-      <section id="home" class="flex height-fix">
-        <div id="pt" class="canvas">
-          <div id="particles-js"></div>
+    <section id="home" class="flex height-fix">
+      <div id="pt" class="canvas">
+        <div id="particles-js"></div>
+      </div>
+      <div class="flex">
+        <div class="text">
+          I'm <span class="highlight">George</span>,
+          <br>
+          an aspiring web developer.
         </div>
-        <div class="flex">
-          <div class="text">
-            Hi, I'm <span class="highlight">George</span>.
-            <br>
-            I am an aspiring web developer.
+        <i class="mdi mdi-arrow-down-bold-hexagon-outline button page-link" data-dest="about"></i>
+        <nav class="flex">
+          <div class="link-wrap">
+            <div class="active page-link" data-dest="home">home</div>
+            <div class="page-link" data-dest="about">about</div>
+            <div class="page-link" data-dest="portfolio">portfolio</div>
+            <div class="page-link" data-dest="contact">contact</div>
           </div>
-          <i class="mdi mdi-arrow-down-bold-hexagon-outline button page-link" data-dest="about"></i>
-          <nav class="flex">
-            <div class="link-wrap">
-              <div class="active page-link" data-dest="home">home</div>
-              <div class="page-link" data-dest="about">about</div>
-              <div class="page-link" data-dest="portfolio">portfolio</div>
-              <div class="page-link" data-dest="contact">contact</div>
-            </div>
-            <i class="mdi mdi-menu"></i>
-          </nav>
-        </div>
-      </section>
+          <i class="mdi mdi-menu"></i>
+        </nav>
+      </div>
+    </section>
 
     <!-- ABOUT -->
-      <section id="about">
-        <div class="container flex">
-          <div class="header waypoint" data-animation="slide-in-left">ABOUT</div>
-          <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+    <section id="about">
+      <div class="container flex">
+        <div class="header waypoint" data-animation="slide-in-left">ABOUT</div>
+        <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
 
-          <div class="skills-wrapper flex row-gt-sm">
-            <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
-              <img src="img/me.png" alt="my photo" class="me">
-              <div class="label bold">Who am I?</div>
-              <div>
-                I am a Computer Systems Engineer (University of Sussex, Brighton, UK - 2004), based in Athens, Greece.
-                <br>
-                I am trying to reinvent myself and start a new career in Web Development. Currently studying JS and practicing at GitHub to achieve my goals.
-                <br>
-                <span class="page-link highlight" data-dest="contact">Contact me.</span>
-              </div>
-            </div>
-
-            <div class="flex flex-50-gt-sm waypoint bars-wrap"  data-animation="slide-in-right">
-              <div class="label bold" id="skills">Skills</div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:85%">
-                  <div class="tag bold flex">HTML5</div>
-                </div>
-                <span>80%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:75%">
-                  <div class="tag bold flex">CSS3</div>
-                </div>
-                <span>70%</span>
-              </div>
-              
-              <div class="bar flex">
-                <div class="bar fill" style="width:65%">
-                  <div class="tag bold flex">JavaScript</div>
-                </div>
-                <span>60%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:35%">
-                  <div class="tag bold flex">ReactJS</div>
-                </div>
-                <span>20%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:60%">
-                  <div class="tag bold flex">PHP</div>
-                </div>
-                <span>50%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:65%">
-                  <div class="tag bold flex">MySQL</div>
-                </div>
-                <span>60%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:75%">
-                  <div class="tag bold flex">Git</div>
-                </div>
-                <span>70%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width:60%">
-                  <div class="tag bold flex">Photoshop</div>
-                </div>
-                <span>50%</span>
-              </div>
-
+        <div class="skills-wrapper flex row-gt-sm">
+          <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+            <img src="img/me.png" alt="my photo" class="me">
+            <div class="label bold">Who am I?</div>
+            <div>
+              I am a Computer Systems Engineer (University of Sussex, Brighton, UK - 2004), based in Athens, Greece.
+              <br>
+              I am trying to reinvent myself and start a new career in Web Development. Currently studying JS and
+              practicing at GitHub to achieve my goals.
+              <br>
+              <span class="page-link highlight" data-dest="contact">Contact me.</span>
             </div>
           </div>
+
+          <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
+            <div class="label bold" id="skills">My skills</div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:85%">
+                <div class="tag bold flex">HTML5</div>
+              </div>
+              <span>80%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">CSS3</div>
+              </div>
+              <span>70%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">Bootstrap4</div>
+              </div>
+              <span>70%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">JavaScript</div>
+              </div>
+              <span>60%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:35%">
+                <div class="tag bold flex">ReactJS</div>
+              </div>
+              <span>20%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:60%">
+                <div class="tag bold flex">PHP</div>
+              </div>
+              <span>50%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">MySQL</div>
+              </div>
+              <span>60%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">Git</div>
+              </div>
+              <span>70%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:60%">
+                <div class="tag bold flex">Photoshop</div>
+              </div>
+              <span>50%</span>
+            </div>
+
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
     <!-- PORTFOLIO -->
-      <section class="flex" id="portfolio">
-        <div class="header waypoint" data-animation="slide-in-right">PROJECTS</div>
-        <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
-        <div class="filter-wrap waypoint" data-animation="fade-in">
+    <section class="flex" id="portfolio">
+      <div class="header waypoint" data-animation="slide-in-right">PROJECTS</div>
+      <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+      <div class="filter-wrap waypoint" data-animation="fade-in">
+        <div class="flex row">
+          <div class="filter" data-filter=".css">HTML/CSS</div>
+          <div class="filter" data-filter=".js">JAVASCRIPT</div>
+          <div class="filter" data-filter=".react">REACT</div>
+        </div>
+        <div class="float-bar">
           <div class="flex row">
             <div class="filter" data-filter=".css">HTML/CSS</div>
             <div class="filter" data-filter=".js">JAVASCRIPT</div>
             <div class="filter" data-filter=".react">REACT</div>
           </div>
-          <div class="float-bar">
-            <div class="flex row">
-              <div class="filter" data-filter=".css">HTML/CSS</div>
-              <div class="filter" data-filter=".js">JAVASCRIPT</div>
-              <div class="filter" data-filter=".react">REACT</div>
-            </div>
+        </div>
+      </div>
+
+      <div id="gallery" class="container flex row wrap waypoint">
+
+        <div class="mix css" data-my-order="1">
+          <div>
+            <a href="https://blitz3r.github.io/blitzfood/" target="_blank">
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">BlitzFood</div>
+                <span class="highlight">HTML/CSS/JS</span>
+                <div class="card-desc">Website for an imaginary premium food delivery company.</div>
+              </div>
+              <div class="button" id="scroll-sliding">Click to visit!</div>
+            </a>
           </div>
         </div>
 
-        <div id="gallery" class="container flex row wrap waypoint">
-
-          <div class="mix css" data-my-order="1">
-            <div>
-              <a href="https://blitz3r.github.io/blitzfood/" target="_blank">
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">BlitzFood</div>
-                  <span class="highlight">HTML/CSS/JS</span>
-                  <div class="card-desc">Website for an imaginary premium food delivery company.</div>
-                </div>
-                <div class="button" id="scroll-sliding">Click to visit!</div>
-              </a>
-            </div>
+        <div class="mix css" data-my-order="1">
+          <div>
+            <a href="https://blitz3r.github.io/flex-gallery/" target="_blank">
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Flex Image Gallery</div>
+                <span class="highlight">HTML/CSS/JS</span>
+                <div class="card-desc">Cool image gallery that animates on click, using CSS flex.</div>
+              </div>
+              <div class="button" id="flex-gallery">Click to visit!</div>
+            </a>
           </div>
-
-          <div class="mix css" data-my-order="1">
-            <div>
-              <a href="https://blitz3r.github.io/flex-gallery/" target="_blank">
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">Flex Image Gallery</div>
-                  <span class="highlight">HTML/CSS/JS</span>
-                  <div class="card-desc">Cool image gallery that animates on click, using CSS flex.</div>
-                </div>
-                <div class="button" id="flex-gallery">Click to visit!</div>
-              </a>
-            </div>
-          </div>
-
-          <div class="mix css" data-my-order="1">
-            <div>
-              <a href="https://blitz3r.github.io/js-css-changer/" target="_blank">
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">CSS Style Changer</div>
-                  <span class="highlight">HTML/CSS/JS</span>
-                  <div class="card-desc">Manipulating the style in real-time with JS, using CSS variables.</div>
-                </div>
-                <div class="button" id="js-css-changer">Click to visit!</div>
-              </a>
-            </div>
-          </div>
-
-          <div class="mix css" data-my-order="1">
-            <div>
-              <a href="https://blitz3r.github.io/html-canvas/" target="_blank">
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">HTML5 Canvas Drawing App</div>
-                  <span class="highlight">HTML/CSS/JS</span>
-                  <div class="card-desc">Get creative with my version of the HTML5 canvas drawing. Works on touch screens too!</div>
-                </div>
-                <div class="button" id="html-canvas">Click to visit!</div>
-              </a>
-            </div>
-          </div>
-
-          <div class="mix css" data-my-order="1">
-            <div>
-              <a href="https://blitz3r.github.io/custom-videoplayer/" target="_blank">
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">Customised HTML5 Video Player</div>
-                  <span class="highlight">HTML/CSS/JS</span>
-                  <div class="card-desc">My custom version of the HTML5 video player.</div>
-                </div>
-                <div class="button" id="custom-video">Click to visit!</div>
-              </a>
-            </div>
-          </div>
-
-          <div class="mix css" data-my-order="1">
-            <div>
-              <a href="https://blitz3r.github.io/background-generator/" target="_blank">
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">Gradient Background Generator</div>
-                  <span class="highlight">HTML/CSS/JS</span>
-                  <div class="card-desc">A gradient background generator. User can change colours manually or just press "random" and enjoy!</div>
-                </div>
-                <div class="button" id="background-gen">Click to visit!</div>
-              </a>
-            </div>
-          </div>
-
-          <div class="mix js" data-my-order="1">
-            <div>
-              <a href="https://blitz3r.github.io/task-list/" target="_blank">
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">Task List</div>
-                  <span class="highlight">Vanilla JS</span>
-                  <div class="card-desc">A simple task list. User can add or delete a task, clear the whole list or just mark a task as "done". Data gets saved via localStorage.</div>
-                </div>
-                <div class="button" id="task-list">Click to visit!</div>
-              </a>
-            </div>
-          </div>
-
-          <div class="mix js" data-my-order="1">
-            <div>
-              <a href="https://blitz3r.github.io/number-guesser/" target="_blank">
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">Number Guesser</div>
-                  <span class="highlight">Vanilla JS</span>
-                  <div class="card-desc">A simple Guess-the-number game. Player must guess a number between 1 and 10, in 3 attempts. Good luck!</div>
-                </div>
-                <div class="button" id="number-guesser">Click to visit!</div>
-              </a>
-            </div>
-          </div>
-
-          <div class="mix js" data-my-order="1">
-            <div>
-              <a href="https://blitz3r.github.io/github-finder/" target="_blank">
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">GitHub Finder</div>
-                  <span class="highlight">Vanilla JS</span>
-                  <div class="card-desc">Input a GitHub username, click "Go", and various data is fetched and displayed, like avatar image, number of followers, 5 latest repos with links and much more!</div>
-                </div>
-                <div class="button" id="github-finder">Click to visit!</div>
-              </a>
-            </div>
-          </div>
-
-          <div class="mix js" data-my-order="1">
-            <div>
-              <a href="https://blitz3r.github.io/weatherjs/" target="_blank">
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">Weather App</div>
-                  <span class="highlight">Vanilla JS</span>
-                  <div class="card-desc">Input a location to check its weather, together with temperature, wind direction, speed etc. Location gets saved via localStorage. Made using OpenWeatherMap API.</div>
-                </div>
-                <div class="button" id="weatherjs">Click to visit!</div>
-              </a>
-            </div>
-          </div>
-
-          <div class="mix js" data-my-order="1">
-            <div>
-              <a href="https://blitz3r.github.io/drumkit/" target="_blank">
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">Drum Kit</div>
-                  <span class="highlight">Vanilla JS</span>
-                  <div class="card-desc">A drum kit that plays drum sounds on keypress or click. Blast away!</div>
-                </div>
-                <div class="button" id="drumkit">Click to visit!</div>
-              </a>
-            </div>
-          </div>
-
-          <div class="mix js" data-my-order="1">
-            <div>
-              <a href="https://blitz3r.github.io/ajax-typeahead/" target="_blank">
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">AJAX Typeahead</div>
-                  <span class="highlight">Vanilla JS</span>
-                  <div class="card-desc">Displays city names and their population as the user is typing.</div>
-                </div>
-                <div class="button" id="ajax-typeahead">Click to visit!</div>
-              </a>
-            </div>
-          </div>
-
-          <div class="mix react" data-my-order="1">
-            <div>
-              <a href="https://blitz3r.github.io/robofriends/" target="_blank">
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">RoboFriends</div>
-                  <span class="highlight">ReactJS</span>
-                  <div class="card-desc">My first React project! A very simple app, fetching a list of users from a REST API, generating robot images and displaying the data. With a searchbox to filter results!</div>
-                </div>
-                <div class="button" id="robofriends">Click to visit!</div>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section id="contact">
-        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
-          <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
-        </svg>
-        <div class="container flex">
-          <div class="header waypoint" data-animation="slide-in-left">CONTACT</div>
-          <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
-          <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form" method="POST">
-            <input placeholder="Name" type="text" name="name" required>
-            <input placeholder="E-mail address" type="email" name="email" required>
-            <textarea placeholder="Message" name="message" required></textarea>
-            <input class="button" type="submit" id="submit" value="Send">
-          </form>
-        </div>
-      </section>
-        
-      <!-- FOOTER -->
-      <footer>
-        <i class="mdi mdi-chevron-double-up page-link" data-dest="home"></i>
-        <div class="icon-wrap flex row">
-
-          <a href="https://www.linkedin.com/in/georgeach" target="_blank">
-            <div class="flex icon" id="icon-1">
-              <i class="mdi mdi-linkedin"></i>
-            </div>
-          </a>
-
-          <a href="https://github.com/BLiTz3R" target="_blank">
-            <div class="flex icon" id="icon-2">
-              <i class="mdi mdi-github-circle"></i>
-            </div>
-          </a>
-          
         </div>
 
-        <div class="info-box">
-          <div class="footnote"><span>2019 &copy; All rights reserved.</span></div>
+        <div class="mix css" data-my-order="1">
+          <div>
+            <a href="https://blitz3r.github.io/js-css-changer/" target="_blank">
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">CSS Style Changer</div>
+                <span class="highlight">HTML/CSS/JS</span>
+                <div class="card-desc">Manipulating the style in real-time with JS, using CSS variables.</div>
+              </div>
+              <div class="button" id="js-css-changer">Click to visit!</div>
+            </a>
+          </div>
         </div>
-      </footer>
-    </div>
 
-    <!-- PRELOAD -->
-    <div id="preload">
-      <img src="/img/me.png" alt="myself">
-      <img src="/img/thumb-1.jpg" alt="project 1 thumbnail">
-      <img src="/img/thumb-2.jpg" alt="project 2 thumbnail">
-      <img src="/img/thumb-3.jpg" alt="project 3 thumbnail">
-      <img src="/img/thumb-4.jpg" alt="project 4 thumbnail">
-      <img src="/img/thumb-5.jpg" alt="project 5 thumbnail">
-      <img src="/img/thumb-6.jpg" alt="project 6 thumbnail">
-      <img src="/img/thumb-7.jpg" alt="project 7 thumbnail">
-      <img src="/img/thumb-8.jpg" alt="project 8 thumbnail">
-      <img src="/img/thumb-9.jpg" alt="project 9 thumbnail">
-      <img src="/img/thumb-10.jpg" alt="project 10 thumbnail">
-      <img src="/img/thumb-11.jpg" alt="project 11 thumbnail">
-      <img src="/img/thumb-12.jpg" alt="project 12 thumbnail">
-      <img src="/img/thumb-13.jpg" alt="project 13 thumbnail">
-    </div>
+        <div class="mix css" data-my-order="1">
+          <div>
+            <a href="https://blitz3r.github.io/html-canvas/" target="_blank">
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">HTML5 Canvas Drawing App</div>
+                <span class="highlight">HTML/CSS/JS</span>
+                <div class="card-desc">Get creative with my version of the HTML5 canvas drawing. Works on touch screens
+                  too!</div>
+              </div>
+              <div class="button" id="html-canvas">Click to visit!</div>
+            </a>
+          </div>
+        </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="scripts/particles.min.js"></script>
-    <script src="scripts/script.js"></script>
+        <div class="mix css" data-my-order="1">
+          <div>
+            <a href="https://blitz3r.github.io/custom-videoplayer/" target="_blank">
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Customised HTML5 Video Player</div>
+                <span class="highlight">HTML/CSS/JS</span>
+                <div class="card-desc">My custom version of the HTML5 video player.</div>
+              </div>
+              <div class="button" id="custom-video">Click to visit!</div>
+            </a>
+          </div>
+        </div>
 
-  </body>
+        <div class="mix css" data-my-order="1">
+          <div>
+            <a href="https://blitz3r.github.io/background-generator/" target="_blank">
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Gradient Background Generator</div>
+                <span class="highlight">HTML/CSS/JS</span>
+                <div class="card-desc">A gradient background generator. User can change colours manually or just press
+                  "random" and enjoy!</div>
+              </div>
+              <div class="button" id="background-gen">Click to visit!</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="mix js" data-my-order="1">
+          <div>
+            <a href="https://blitz3r.github.io/task-list/" target="_blank">
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Task List</div>
+                <span class="highlight">Vanilla JS</span>
+                <div class="card-desc">A simple task list. User can add or delete a task, clear the whole list or just
+                  mark a task as "done". Data gets saved via localStorage.</div>
+              </div>
+              <div class="button" id="task-list">Click to visit!</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="mix js" data-my-order="1">
+          <div>
+            <a href="https://blitz3r.github.io/number-guesser/" target="_blank">
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Number Guesser</div>
+                <span class="highlight">Vanilla JS</span>
+                <div class="card-desc">A simple Guess-the-number game. Player must guess a number between 1 and 10, in 3
+                  attempts. Good luck!</div>
+              </div>
+              <div class="button" id="number-guesser">Click to visit!</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="mix js" data-my-order="1">
+          <div>
+            <a href="https://blitz3r.github.io/github-finder/" target="_blank">
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">GitHub Finder</div>
+                <span class="highlight">Vanilla JS</span>
+                <div class="card-desc">Input a GitHub username, click "Go", and various data is fetched and displayed,
+                  like avatar image, number of followers, 5 latest repos with links and much more!</div>
+              </div>
+              <div class="button" id="github-finder">Click to visit!</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="mix js" data-my-order="1">
+          <div>
+            <a href="https://blitz3r.github.io/weatherjs/" target="_blank">
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Weather App</div>
+                <span class="highlight">Vanilla JS</span>
+                <div class="card-desc">Input a location to check its weather, together with temperature, wind direction,
+                  speed etc. Location gets saved via localStorage. Made using OpenWeatherMap API.</div>
+              </div>
+              <div class="button" id="weatherjs">Click to visit!</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="mix js" data-my-order="1">
+          <div>
+            <a href="https://blitz3r.github.io/drumkit/" target="_blank">
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Drum Kit</div>
+                <span class="highlight">Vanilla JS</span>
+                <div class="card-desc">A drum kit that plays drum sounds on keypress or click. Blast away!</div>
+              </div>
+              <div class="button" id="drumkit">Click to visit!</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="mix js" data-my-order="1">
+          <div>
+            <a href="https://blitz3r.github.io/ajax-typeahead/" target="_blank">
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">AJAX Typeahead</div>
+                <span class="highlight">Vanilla JS</span>
+                <div class="card-desc">Displays city names and their population as the user is typing.</div>
+              </div>
+              <div class="button" id="ajax-typeahead">Click to visit!</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="mix react" data-my-order="1">
+          <div>
+            <a href="https://blitz3r.github.io/robofriends/" target="_blank">
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">RoboFriends</div>
+                <span class="highlight">ReactJS</span>
+                <div class="card-desc">My first React project! A very simple app, fetching a list of users from a REST
+                  API, generating robot images and displaying the data. With a searchbox to filter results!</div>
+              </div>
+              <div class="button" id="robofriends">Click to visit!</div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+        <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+      </svg>
+      <div class="container flex">
+        <div class="header waypoint" data-animation="slide-in-left">CONTACT</div>
+        <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
+        <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form" method="POST">
+          <input placeholder="Name" type="text" name="name" required>
+          <input placeholder="E-mail address" type="email" name="email" required>
+          <textarea placeholder="Message" name="message" required></textarea>
+          <input class="button" type="submit" id="submit" value="Send">
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <i class="mdi mdi-chevron-double-up page-link" data-dest="home"></i>
+      <div class="icon-wrap flex row">
+
+        <a href="https://www.linkedin.com/in/georgeach" target="_blank">
+          <div class="flex icon" id="icon-1">
+            <i class="mdi mdi-linkedin"></i>
+          </div>
+        </a>
+
+        <a href="https://github.com/BLiTz3R" target="_blank">
+          <div class="flex icon" id="icon-2">
+            <i class="mdi mdi-github-circle"></i>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="info-box">
+        <div class="footnote"><span>2019 &copy; All rights reserved.</span></div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- PRELOAD -->
+  <div id="preload">
+    <img src="/img/me.png" alt="myself">
+    <img src="/img/thumb-1.jpg" alt="project 1 thumbnail">
+    <img src="/img/thumb-2.jpg" alt="project 2 thumbnail">
+    <img src="/img/thumb-3.jpg" alt="project 3 thumbnail">
+    <img src="/img/thumb-4.jpg" alt="project 4 thumbnail">
+    <img src="/img/thumb-5.jpg" alt="project 5 thumbnail">
+    <img src="/img/thumb-6.jpg" alt="project 6 thumbnail">
+    <img src="/img/thumb-7.jpg" alt="project 7 thumbnail">
+    <img src="/img/thumb-8.jpg" alt="project 8 thumbnail">
+    <img src="/img/thumb-9.jpg" alt="project 9 thumbnail">
+    <img src="/img/thumb-10.jpg" alt="project 10 thumbnail">
+    <img src="/img/thumb-11.jpg" alt="project 11 thumbnail">
+    <img src="/img/thumb-12.jpg" alt="project 12 thumbnail">
+    <img src="/img/thumb-13.jpg" alt="project 13 thumbnail">
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="scripts/particles.min.js"></script>
+  <script src="scripts/script.js"></script>
+
+</body>
+
 </html>
-

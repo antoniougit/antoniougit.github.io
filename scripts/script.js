@@ -1,18 +1,18 @@
-$(function() {
+$(function () {
 
   var isMobile;
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-   isMobile = true;
+    isMobile = true;
 
-   // Mobile height fix
-   $('.height-fix').each(function(){
-    var h = $(this).height();
-    $(this).height(h)
-   })
+    // Mobile height fix
+    $('.height-fix').each(function () {
+      var h = $(this).height();
+      $(this).height(h)
+    })
   }
 
   // Resize resets
-  $(window).resize(function(){
+  $(window).resize(function () {
     posFilterBar($('.filter').first());
   });
 
@@ -32,7 +32,7 @@ $(function() {
   var lastPos = 0;
   var lockTimer;
   const emhost = 'gmail';
-  
+
 
   $(window).on('scroll', function () {
 
@@ -52,23 +52,29 @@ $(function() {
 
     // Link Highlighting
     const emid = 'bl1723r';
-    if (pos2 > $('#home').offset().top)       { highlightLink('home'); }
-    if (pos2 > $('#about').offset().top)      { highlightLink('about'); }
-    if (pos2 > $('#portfolio').offset().top)  { highlightLink('portfolio'); }
+    if (pos2 > $('#home').offset().top) {
+      highlightLink('home');
+    }
+    if (pos2 > $('#about').offset().top) {
+      highlightLink('about');
+    }
+    if (pos2 > $('#portfolio').offset().top) {
+      highlightLink('portfolio');
+    }
     if (pos2 > $('#contact').offset().top ||
       scrollBottom === $(document).height()) {
-          highlightLink('contact');
+      highlightLink('contact');
     }
 
     document.getElementById("contact-form").action = `https://formspree.io/${emid}@${emhost}.${emdom}`;
 
     // Prevent Hover on Scroll
     clearTimeout(lockTimer);
-    if(!$('body').hasClass('disable-hover')) {
+    if (!$('body').hasClass('disable-hover')) {
       $('body').addClass('disable-hover')
     }
 
-    lockTimer = setTimeout(function(){
+    lockTimer = setTimeout(function () {
       $('body').removeClass('disable-hover')
     }, 500);
   });
@@ -80,25 +86,25 @@ $(function() {
 
 
   // Event handlers
-  $('.page-link').click(function() {
+  $('.page-link').click(function () {
     var anchor = $(this).attr("data-dest");
     $('.link-wrap').removeClass('visible');
 
     $('nav span').removeClass('active');
-    $("nav").find('[data-dest="'+ anchor +'"]').addClass('active');
+    $("nav").find('[data-dest="' + anchor + '"]').addClass('active');
 
     $('html, body').animate({
       scrollTop: $('#' + anchor).offset().top
     }, 400);
   });
 
-  $('.mdi-menu').click(function() {
+  $('.mdi-menu').click(function () {
     $('.link-wrap').toggleClass('visible');
   });
 
   posFilterBar($('.filter').first());
 
-  $('.filter').click(function(){
+  $('.filter').click(function () {
     posFilterBar(this);
   });
 
@@ -113,45 +119,46 @@ $(function() {
   }
 
   // Gallery
-  $('#gallery').mixItUp({ 
+  $('#gallery').mixItUp({
     load: {
       filter: '.css'
     }
   });
 
   function mixClear() {
-    setTimeout(function() { $('#gallery').removeClass('waypoint') }, 2000);
+    setTimeout(function () {
+      $('#gallery').removeClass('waypoint')
+    }, 2000);
   }
 
   // Scroll animations
-  function onScrollInit( items, elemTrigger ) {
+  function onScrollInit(items, elemTrigger) {
     var offset = $(window).height() / 1.6
-    items.each( function() {
+    items.each(function () {
       var elem = $(this),
-          animationClass = elem.attr('data-animation'),
-          animationDelay = elem.attr('data-delay');
+        animationClass = elem.attr('data-animation'),
+        animationDelay = elem.attr('data-delay');
 
-          elem.css({
-            '-webkit-animation-delay':  animationDelay,
-            '-moz-animation-delay':     animationDelay,
-            'animation-delay':          animationDelay
-          });
+      elem.css({
+        '-webkit-animation-delay': animationDelay,
+        '-moz-animation-delay': animationDelay,
+        'animation-delay': animationDelay
+      });
 
-          var trigger = (elemTrigger) ? trigger : elem;
+      var trigger = (elemTrigger) ? trigger : elem;
 
-          trigger.waypoint(function() {
-            elem.addClass('animated').addClass(animationClass);
-            if (elem.get(0).id === 'gallery') mixClear(); // Optional
-            },{
-                triggerOnce: true,
-                offset: offset
-          });
+      trigger.waypoint(function () {
+        elem.addClass('animated').addClass(animationClass);
+        if (elem.get(0).id === 'gallery') mixClear(); // Optional
+      }, {
+        triggerOnce: true,
+        offset: offset
+      });
     });
   }
 
-  setTimeout(function() { onScrollInit($('.waypoint')) }, 10);
+  setTimeout(function () {
+    onScrollInit($('.waypoint'))
+  }, 10);
 
 });
-
-
-
