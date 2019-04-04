@@ -293,7 +293,7 @@ body {
   position: relative; }
 
 .header-bar {
-  margin: 25px 0 75px 0;
+  margin: 25px 0 50px 0;
   width: 70px;
   height: 4px;
   background: #444649; }
@@ -423,8 +423,6 @@ section {
         -ms-flex-align: start;
             align-items: flex-start;
     width: 100%; }
-    section:nth-of-type(2) .skills-wrapper .me {
-      height: 200px; }
     section:nth-of-type(2) .skills-wrapper .label {
       margin: 20px 0 15px 0; }
     section:nth-of-type(2) .skills-wrapper #skills {
@@ -611,9 +609,9 @@ section {
           -webkit-transition: all .5s;
           transition: all .5s; }
         section:nth-of-type(3) #gallery .mix .card-desc {
-          margin-top: 10px; }
+          margin: 10px; }
         section:nth-of-type(3) #gallery .mix:hover .card {
-          opacity: 0.1; 
+          opacity: 0; 
           -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); 
                   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); }
         section:nth-of-type(3) #gallery .mix:hover .text {
@@ -631,7 +629,7 @@ section {
     section:nth-of-type(4) .header {
       color: #fff; }
     section:nth-of-type(4) .header-bar {
-      margin: 25px 0 40px 0;
+      margin: 25px 0 30px 0;
       background: #fff;
       width: 110px; }
     section:nth-of-type(4) .highlight {
@@ -768,6 +766,8 @@ footer {
       color: #FF5A09; }
 
 @media screen and (max-width: 400px) {
+  section:nth-of-type(2) .skills-wrapper .me {
+    height: 150px; }
   section:nth-of-type(3) #gallery .mix .card {
     width: 100vw; } }
 @media screen and (min-width: 600px) {
@@ -781,7 +781,7 @@ footer {
     font-size: 30pt; }
 
   .header-bar {
-    margin: 25px 0 100px 0; }
+    margin: 25px 0 65px 0; }
 
   .label {
     font-size: 18pt; }
@@ -825,7 +825,7 @@ footer {
     section:nth-of-type(2) .skills-wrapper > .flex:first-child {
       padding: 0 50px 0 50px; }
     section:nth-of-type(2) .skills-wrapper .me {
-      height: 250px; }
+      height: 200px; }
     section:nth-of-type(2) .bar {
       height: 28px;
       margin: 0 0 15px 0;
