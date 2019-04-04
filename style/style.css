@@ -434,7 +434,6 @@ section {
     section:nth-of-type(2) .bars-wrap:not(.animated) .fill {
       width: 0 !important; }
   section:nth-of-type(2) .bar {
-    color: #666;
     height: 22px;
     position: relative;
     background-color: #eee;
