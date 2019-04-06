@@ -624,7 +624,7 @@ body {
 }
 
 .button {
-  padding: 10px 20px;
+  padding: 10px 0;
   border: 1px solid #fff;
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
@@ -1225,6 +1225,7 @@ section:nth-of-type(4) input[type="text"],
 section:nth-of-type(4) input[type="email"],
 section:nth-of-type(4) textarea {
   display: block;
+  resize: none;
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1243,10 +1244,10 @@ section:nth-of-type(4) textarea {
 }
 
 section:nth-of-type(4) .button {
-  float: right;
-  margin: 5px 0 0 0;
-  font-size: 12pt;
-  padding: 10px 30px;
+  border: none;
+  margin: 10px 30px;
+  font-size: 14pt;
+  font-weight: 600;
   color: #fff;
   background: transparent;
   outline: 0;
@@ -1255,11 +1256,9 @@ section:nth-of-type(4) .button {
 }
 
 section:nth-of-type(4) .button:hover {
-  color: #FFF;
-  background-color: rgba(255, 90, 9, 0.8);
-  border-color: transparent;
-  -webkit-box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
-  box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
+  color: rgb(255, 90, 9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 section:nth-of-type(4) #success {
