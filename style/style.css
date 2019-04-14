@@ -956,7 +956,8 @@ section:nth-of-type(2) .bar:nth-child(10) .fill {
 }
 
 section:nth-of-type(2) .bar span {
-  display: none;
+    z-index: 1;
+    padding: 0 3px 0 0;
 }
 
 section:nth-of-type(2) .bar.fill {
@@ -985,11 +986,6 @@ section:nth-of-type(2) .bar.secondary {
 
 section:nth-of-type(2) .bar.secondary .tag {
   background-color: #FF5A09;
-}
-
-section:nth-of-type(2) .bar span {
-  z-index: 1;
-  padding: 0 15px 0 0;
 }
 
 section:nth-of-type(3) {
@@ -1493,6 +1489,8 @@ footer .footnote .highlight {
 
   section:nth-of-type(2) .bar span {
     display: initial;
+    padding: 0 15px 0 0;
+
   }
 
   section:nth-of-type(2) .bar .tag {
