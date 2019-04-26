@@ -115,7 +115,7 @@ $(function () {
   // Gallery
   $('#gallery').mixItUp({
     load: {
-      filter: '.css'
+      filter: '.apps'
     }
   });
 
