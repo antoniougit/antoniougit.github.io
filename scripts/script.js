@@ -27,11 +27,11 @@ $(function () {
   particlesJS.load('particles-js', 'scripts/particles.json');
 
   // Nav position
-  const emdom = 'com';
+  //const emdom = 'com';
   var navPos = $('nav').position().top;
   var lastPos = 0;
   var lockTimer;
-  const emhost = 'gmail';
+  //const emhost = 'gmail';
 
 
   $(window).on('scroll', function () {
@@ -51,7 +51,7 @@ $(function () {
     }
 
     // Link Highlighting
-    const emid = 'bl1723r';
+    //const emid = 'bl1723r';
     if (pos2 > $('#home').offset().top) {
       highlightLink('home');
     }
@@ -66,7 +66,7 @@ $(function () {
       highlightLink('contact');
     }
 
-    document.getElementById("contact-form").action = `https://formspree.io/${emid}@${emhost}.${emdom}`;
+    //document.getElementById("contact-form").action = `https://formspree.io/${emid}@${emhost}.${emdom}`;
 
     // Prevent Hover on Scroll
     clearTimeout(lockTimer);
