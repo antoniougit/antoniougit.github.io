@@ -24,7 +24,7 @@ $(function () {
   }
 
   // Canvas particles - particlesJS.load(@dom-id, @path-json, @callback (optional)); //
-  particlesJS.load('particles-js', 'scripts/particles.json');
+  particlesJS.load('particles-js', 'js/particles.json');
 
   // Nav position
   var navPos = $('nav').position().top;
