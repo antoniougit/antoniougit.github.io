@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
 
   var isMobile;
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -124,6 +124,10 @@ $(function () {
       $('#gallery').removeClass('waypoint')
     }, 2000);
   }
+
+  // Contact
+  const contactForm = document.getElementById('contact-form');
+  contactForm.setAttribute('action', '//formspree.io/' + 'bl1723r' + '@' + 'gmail' + '.' + 'com');
 
   // Scroll animations
   function onScrollInit(items, elemTrigger) {

@@ -413,12 +413,15 @@
       <div class="container flex">
         <div class="header waypoint" data-animation="slide-in-left">CONTACT</div>
         <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
-        <form action="https://contactme-server.herokuapp.com/" class="waypoint" data-animation="pop-in"
-          data-delay=".5s" id="contact-form" method="POST">
-          <input placeholder="Name" type="text" name="name" required>
-          <input placeholder="E-mail address" type="email" name="email" required>
-          <textarea placeholder="Message" name="message" required></textarea>
+        <form id="contact-form" class="waypoint" data-animation="pop-in"
+          data-delay=".5s" method="POST">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="E-mail address" required>
+          <textarea name="message" placeholder="Message" required></textarea>
           <input class="button" type="submit" id="submit" value="Send">
+          <input type="hidden" name="_next" value="//blitz3r.github.io">
+          <input type="hidden" name="_subject" value="Website contact">
+          <input type="text" name="_gotcha" style="display:none">
         </form>
       </div>
     </section>
