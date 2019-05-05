@@ -57,9 +57,13 @@
             <img src="img/me.png" alt="my photo" class="me">
             <div class="label bold who">Who am I?</div>
             <div>
-              <p>I am a computer guy. I have been since a very young age. I love solving problems and I can be incredibly persistent. I hold a BEng degree in Computer Systems Engineering (University of Sussex, Brighton, UK - 2004) and I'm based in Athens, Greece. </p>
-              <p>After about 10 years of various jobs in the IT field, I am trying to reinvent myself and start a new career in Web Development. Currently focused on mastering
-              JavaScript and learning React/Node/Express. You can check out some of my small projects in the next section!</p>
+              <p>I am a computer guy. I have been since a very young age. I love solving problems and I can be
+                incredibly persistent. I hold a BEng degree in Computer Systems Engineering (University of Sussex,
+                Brighton, UK - 2004) and I'm based in Athens, Greece. </p>
+              <p>After about 10 years of various jobs in the IT field, I am trying to reinvent myself and start a new
+                career in Web Development. Currently focused on mastering
+                JavaScript and learning React/Node/Express. You can check out some of my small projects in the next
+                section!</p>
               <span class="page-link highlight" data-dest="contact">Contact me for more info</span>
             </div>
           </div>
@@ -171,18 +175,19 @@
       <div id="gallery" class="container flex row wrap waypoint">
 
         <div class="mix apps" data-my-order="1">
-            <div>
-              <a href="https://blitz3r.github.io/trollify/" target="_blank">
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">Trollify</div>
-                  <span class="highlight">ReactJS, PostgreSQL, NodeJS+Express</span>
-                  <div class="card-desc">Trollify your favourite faces by just inputing a valid image URL. Full-stack app with registration, login and attempt counter, using Clarifai API.</div>
-                </div>
-                <div class="button">Click to visit!</div>
-              </a>
-            </div>
+          <div>
+            <a href="https://blitz3r.github.io/trollify/" target="_blank">
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Trollify</div>
+                <span class="highlight">ReactJS, PostgreSQL, NodeJS+Express</span>
+                <div class="card-desc">Trollify your favourite faces by just inputing a valid image URL. Full-stack app
+                  with registration, login and attempt counter, using Clarifai API.</div>
+              </div>
+              <div class="button">Click to visit!</div>
+            </a>
           </div>
+        </div>
 
         <div class="mix apps" data-my-order="1">
           <div>
@@ -206,7 +211,9 @@
               <div class="text">
                 <div class="bold">Job Shifts Scheduler</div>
                 <span class="highlight">Vanilla JS</span>
-                <div class="card-desc">A job shifts selector app I was asked to do for a Greek company. User selects preferred days and times, clicks submit button, and the results are sorted, "translated" in complete Greek words and sent to an external API.</div>
+                <div class="card-desc">A job shifts selector app I was asked to do for a Greek company. User selects
+                  preferred days and times, clicks submit button, and the results are sorted, "translated" in complete
+                  Greek words and sent to an external API.</div>
               </div>
               <div class="button">Click to visit!</div>
             </a>
@@ -221,7 +228,8 @@
                 <div class="bold">Speech Recognition</div>
                 <span class="highlight">Vanilla JS</span>
                 <div class="card-desc">Speech recognition app using Google's API, with a nice notepad look. Opens my
-                  weather app when instructed "get the weather" and I plan on adding more cool features in the future.</div>
+                  weather app when instructed "get the weather" and I plan on adding more cool features in the future.
+                </div>
               </div>
               <div class="button">Click to visit!</div>
             </a>
@@ -280,7 +288,8 @@
               <div class="text">
                 <div class="bold">Simon Game</div>
                 <span class="highlight">Vanilla JS</span>
-                <div class="card-desc">A Simon game, with colours and sound effects. Latest version is mobile-friendly!</div>
+                <div class="card-desc">A Simon game, with colours and sound effects. Latest version is mobile-friendly!
+                </div>
               </div>
               <div class="button">Click to visit!</div>
             </a>
@@ -352,7 +361,8 @@
               <div class="text">
                 <div class="bold">BlitzFood</div>
                 <span class="highlight">HTML/CSS/jQuery</span>
-                <div class="card-desc">Responsive website for a fake premium food delivery company, using some jQuery.</div>
+                <div class="card-desc">Responsive website for a fake premium food delivery company, using some jQuery.
+                </div>
               </div>
               <div class="button">Click to visit!</div>
             </a>
@@ -366,7 +376,8 @@
               <div class="text">
                 <div class="bold">Pander</div>
                 <span class="highlight">HTML/CSS</span>
-                <div class="card-desc">A Tinder clone, but with cute pandas! Simple, responsive, using Bootstrap 4.</div>
+                <div class="card-desc">A Tinder clone, but with cute pandas! Simple, responsive, using Bootstrap 4.
+                </div>
               </div>
               <div class="button">Click to visit!</div>
             </a>
@@ -413,13 +424,12 @@
       <div class="container flex">
         <div class="header waypoint" data-animation="slide-in-left">CONTACT</div>
         <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
-        <form id="contact-form" class="waypoint" data-animation="pop-in"
-          data-delay=".5s" method="POST">
+        <form id="contact-form" class="waypoint" data-animation="pop-in" data-delay=".5s" method="POST">
           <input type="text" name="name" placeholder="Name" required>
-          <input type="email" name="email" placeholder="E-mail address" required>
+          <input type="email" name="_replyto" placeholder="E-mail address" required>
           <textarea name="message" placeholder="Message" required></textarea>
           <input class="button" type="submit" id="submit" value="Send">
-          <input type="hidden" name="_next" value="//blitz3r.github.io">
+          <input type="hidden" name="_next" value="/success.html">
           <input type="hidden" name="_subject" value="Website contact">
           <input type="text" name="_gotcha" style="display:none">
         </form>

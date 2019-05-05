@@ -906,8 +906,8 @@ section:nth-of-type(2) .bar {
 }
 
 section:nth-of-type(2) .bar span {
-    z-index: 1;
-    padding: 0 3px 0 0;
+  z-index: 1;
+  padding: 0 3px 0 0;
 }
 
 section:nth-of-type(2) .bar.fill {
@@ -1630,4 +1630,35 @@ footer .footnote .highlight {
     padding: 0 40px;
     margin: 0 25px;
   }
+}
+
+.success {
+  min-height: 350px;
+  background: #252934;
+}
+
+.success .header {
+  margin-top: 50px;
+  color: #fff;
+}
+
+.success .header-bar {
+  background: #fff;
+}
+
+.success a {
+  border: none;
+  margin: 10px 0;
+  font-size: 14pt;
+  font-weight: 600;
+  color: rgb(255, 90, 9);
+  background: transparent;
+  outline: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.success a:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
 }
