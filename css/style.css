@@ -1329,6 +1329,37 @@ footer .footnote .highlight {
   color: #FF5A09;
 }
 
+.success {
+  min-height: 280px;
+  background: #252934;
+}
+
+.success .header {
+  margin-top: 50px;
+  color: #fff;
+}
+
+.success .header-bar {
+  background: #fff;
+}
+
+.success a {
+  border: none;
+  margin: 10px 0;
+  font-size: 10pt;
+  font-weight: 600;
+  color: rgb(255, 90, 9);
+  background: transparent;
+  outline: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.success a:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
 @media screen and (max-width: 400px) {
   section:nth-of-type(3) #gallery .mix .card {
     width: 100vw;
@@ -1496,6 +1527,37 @@ footer .footnote .highlight {
   section:nth-of-type(4) form {
     min-width: 500px;
   }
+
+  .success {
+    min-height: 350px;
+    background: #252934;
+  }
+
+  .success .header {
+    margin-top: 50px;
+    color: #fff;
+  }
+
+  .success .header-bar {
+    background: #fff;
+  }
+
+  .success a {
+    border: none;
+    margin: 10px 0;
+    font-size: 14pt;
+    font-weight: 600;
+    color: rgb(255, 90, 9);
+    background: transparent;
+    outline: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .success a:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -1630,35 +1692,4 @@ footer .footnote .highlight {
     padding: 0 40px;
     margin: 0 25px;
   }
-}
-
-.success {
-  min-height: 350px;
-  background: #252934;
-}
-
-.success .header {
-  margin-top: 50px;
-  color: #fff;
-}
-
-.success .header-bar {
-  background: #fff;
-}
-
-.success a {
-  border: none;
-  margin: 10px 0;
-  font-size: 14pt;
-  font-weight: 600;
-  color: rgb(255, 90, 9);
-  background: transparent;
-  outline: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.success a:hover {
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
 }
