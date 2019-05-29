@@ -678,14 +678,6 @@ section .container {
   width: 70px;
 }
 
-#about .bar.secondary {
-  background-color: #ff6600;
-}
-
-#about .bar.secondary .tag {
-  background-color: #ff6600;
-}
-
 #portfolio {
   background: #fff;
 }
