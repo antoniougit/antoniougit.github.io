@@ -920,6 +920,21 @@ section .flex-50-gt-sm {
   color: #fff;
 }
 
+#contact ::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.9;
+}
+
+#contact :-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.9;
+}
+
+#contact ::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.9;
+}
+
 #contact ::placeholder {
   color: #fff;
   opacity: 0.9;
