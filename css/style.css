@@ -638,7 +638,7 @@ section .container {
 #about .bar {
   height: 22px;
   position: relative;
-  background-color: #ddd;
+  background-color: #eee;
   margin: 0 0 12px 0;
   -webkit-box-align: end;
   -ms-flex-align: end;
@@ -920,6 +920,11 @@ section .flex-50-gt-sm {
   color: #fff;
 }
 
+#contact ::placeholder {
+  color: #fff;
+  opacity: 0.9;
+}
+
 #contact textarea {
   min-height: 150px;
   margin-bottom: 5px;
@@ -1022,7 +1027,6 @@ footer .icon-wrap #icon-2:hover .mdi {
 
 footer .footnote {
   font-size: 10pt;
-  color: #8F9AA7;
   margin-top: 35px;
   opacity: 0.6;
 }
