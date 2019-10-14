@@ -459,10 +459,6 @@ body {
   background: #444649;
 }
 
-.label {
-  font-size: 14pt;
-}
-
 nav {
   bottom: 0;
   left: 0;
@@ -590,10 +586,6 @@ section .container {
   background: #f9f9f9;
 }
 
-#about .label-wrap .label {
-  margin: 20px 0 10px 0;
-}
-
 #about .bullet-wrap {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -611,14 +603,7 @@ section .container {
   -ms-flex-align: start;
   align-items: flex-start;
   width: 100%;
-}
-
-#about .skills-wrapper .label {
-  margin: 0 0 30px;
-}
-
-#about .skills-wrapper .who {
-  margin: 15px 0 30px;
+  margin: 30px 0 0;
 }
 
 #about .skills-wrapper #skills {
@@ -626,7 +611,7 @@ section .container {
 }
 
 #about .bars-wrap {
-  margin: 50px auto 0 auto;
+  margin: 30px auto 0 auto;
   width: calc(100% - 15px);
   max-width: 90%;
 }
@@ -1093,7 +1078,7 @@ footer .footnote .highlight {
     font-size: 22pt;
   }
 
-  #about .skills-wrapper .me {
+  #about .me {
     height: 150px;
   }
 
@@ -1114,10 +1099,6 @@ footer .footnote .highlight {
 
   .header-bar {
     margin: 25px 0 65px 0;
-  }
-
-  .label {
-    font-size: 18pt;
   }
 
   nav .link-wrap {
@@ -1165,14 +1146,6 @@ footer .footnote .highlight {
     top: 16px;
   }
 
-  #about .label-wrap .label {
-    margin: 15px 0 5px 0;
-  }
-
-  #about .label-wrap>div {
-    padding: 0 15px;
-  }
-
   #about .bullet-wrap {
     height: 230px;
   }
@@ -1181,7 +1154,7 @@ footer .footnote .highlight {
     padding: 0 50px 0 50px;
   }
 
-  #about .skills-wrapper .me {
+  #about .me {
     height: 200px;
   }
 
@@ -1221,11 +1194,6 @@ footer .footnote .highlight {
 
   #contact {
     padding: 130px 0 180px 0;
-  }
-
-  #contact .label {
-    line-height: 22pt;
-    font-size: 16pt;
   }
 
   #contact .date {
@@ -1383,10 +1351,10 @@ footer .footnote .highlight {
   }
 
   #about .bars-wrap {
-    margin: 0 0 0 0;
+    margin: 1em 0 0;
   }
 
-  #about .skills-wrapper .me {
+  #about .me {
     margin: 0;
   }
 
