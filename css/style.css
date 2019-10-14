@@ -556,6 +556,10 @@ section .container {
   height: calc(100vh + 53px);
 }
 
+#home p {
+  margin: 10px;
+}
+
 #home .highlight {
   font-weight: 600;
 }
