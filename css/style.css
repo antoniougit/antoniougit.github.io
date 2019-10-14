@@ -546,7 +546,7 @@ section {
 }
 
 section .container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 0 10px;
   width: 100%;
@@ -1384,10 +1384,6 @@ footer .footnote .highlight {
 
   #about .bars-wrap {
     margin: 0 0 0 0;
-  }
-
-  #about .skills-wrapper {
-    margin: 50px 0 0 0;
   }
 
   #about .skills-wrapper .me {
